@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "reason": "模型配置未提供",
+  "missing_variables": [
+    "STUDIO_LLM_URL",
+    "STUDIO_LLM_MODEL"
+  ],
+  "model_calls": 0,
+  "real_model_evidence": false
+}
