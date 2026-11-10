@@ -1,0 +1,65 @@
+{
+  "model_mode": "mock",
+  "status": "NEEDS_INPUT",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 0,
+    "duration": null,
+    "rules_and_claims": null,
+    "grounding": null,
+    "review": null,
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "e08bd96b15f344f9af4fb2b8e18770a8",
+    "elapsed_ms": 0.07,
+    "tool_calls": 0,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 1,
+    "max_steps": 20,
+    "input_sha256": "8fb1fecf5f2644a338f70d2dd958b4d5479db09c85d2b65661b85dceca1dac0c",
+    "materials_sha256": "7eef1d678bb6d19465a1edaf105441cb5d0d45034fa6b2561bd9ad69524360d0",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "1420899e0546ffa8c0500811282fbc43d65092c0d0bc99db2557a6d8f20f6549"
+  },
+  "creative_mode": "planned",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "ASK",
+      "reason": "需要补齐关键创作需求。",
+      "args": {
+        "fields": [
+          "受众"
+        ]
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ]
+}

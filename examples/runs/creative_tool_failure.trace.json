@@ -1,0 +1,122 @@
+{
+  "model_mode": "mock",
+  "status": "TOOL_FAILED",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 0,
+    "duration": null,
+    "rules_and_claims": null,
+    "grounding": null,
+    "review": null,
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "dc1b3d7312e544bcbd42940e438525f9",
+    "elapsed_ms": 0.11,
+    "tool_calls": 2,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 3,
+    "max_steps": 20,
+    "input_sha256": "498553845293fbb663fa83880a7bc900a5ca5108fbb401e8b449d0bc4fe29211",
+    "materials_sha256": "7eef1d678bb6d19465a1edaf105441cb5d0d45034fa6b2561bd9ad69524360d0",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "1420899e0546ffa8c0500811282fbc43d65092c0d0bc99db2557a6d8f20f6549"
+  },
+  "creative_mode": "planned",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": "优惠券"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "云栖咖啡门店",
+            "query": "优惠券"
+          },
+          "result": {
+            "status": "error",
+            "detail": "模拟工具不可用"
+          }
+        }
+      ],
+      "role": "道具",
+      "status": "tool_error",
+      "script_version_after": 0,
+      "next_action": "FIND_MATERIAL",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "FIND_MATERIAL",
+      "reason": "工具返回异常，尝试一次有限重试。",
+      "args": {
+        "query": "优惠券",
+        "retry": true
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "云栖咖啡门店",
+            "query": "优惠券"
+          },
+          "result": {
+            "status": "error",
+            "detail": "模拟工具不可用"
+          }
+        }
+      ],
+      "role": "道具",
+      "status": "tool_error",
+      "script_version_after": 0,
+      "next_action": "STOP",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "STOP",
+      "reason": "工具重试后仍不可用。",
+      "args": {
+        "status": "TOOL_FAILED"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ]
+}

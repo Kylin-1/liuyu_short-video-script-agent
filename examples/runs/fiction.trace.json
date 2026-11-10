@@ -1,0 +1,576 @@
+{
+  "model_mode": "mock",
+  "status": "NEEDS_REVIEW",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 1,
+    "duration": {
+      "passed": true,
+      "target_seconds": 25,
+      "total_seconds": 18,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 5
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 9,
+          "minimum_visual_seconds": 4,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 9
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 4,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 0,
+          "reading_seconds": 2,
+          "estimated_seconds": 4
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": false,
+      "issues": [
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。"
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "等一下，我把手机放下。"
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来"
+        },
+        {
+          "scene_id": "S03",
+          "field": "subtitle",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "这周末，约个想见的人"
+        }
+      ],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "原创人物故事｜情境短片",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "等一下，我把手机放下。",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "定格上一镜的结果，在空白安全区叠加引导文字。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S03",
+          "field": "subtitle",
+          "text": "这周末，约个想见的人",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": null,
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "7a00e0f636e440a792e7302f500259cb",
+    "elapsed_ms": 2.73,
+    "tool_calls": 2,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 5,
+    "max_steps": 20,
+    "input_sha256": "c0c5d0c8afee44c0235e3891cd21b9c651282ff7e3f9c4ac68c1039c353bb71b",
+    "materials_sha256": "7eef1d678bb6d19465a1edaf105441cb5d0d45034fa6b2561bd9ad69524360d0",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "1420899e0546ffa8c0500811282fbc43d65092c0d0bc99db2557a6d8f20f6549"
+  },
+  "creative_mode": "legacy",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": ""
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "道具",
+      "observation": {
+        "evidence": "原创虚构剧情，无外部事实素材要求"
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "WRITE",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "WRITE",
+      "reason": "按可用依据起草中文文案。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "原创人物故事｜情境短片",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "hook",
+            "action": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+            "voiceover": "等一下，我把手机放下。",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "payoff",
+            "action": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+            "voiceover": "",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S03",
+            "purpose": "cta",
+            "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+            "voiceover": "",
+            "subtitle": "这周末，约个想见的人",
+            "material_id": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": false
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "hook",
+              "action": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+              "voiceover": "等一下，我把手机放下。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 2,
+            "continuity": "沿用开场人物、物件和动作方向",
+            "framing": "近景，动作落在画面中心",
+            "sound": "先留现场声，再进开场台词",
+            "transition": "在动作最清楚处切入"
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "payoff",
+              "action": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 9,
+            "minimum_visual_seconds": 4,
+            "continuity": "沿用开场人物、物件和动作方向",
+            "framing": "结果特写，关键细节留在安全区",
+            "sound": "保留现场声，给动作留停顿",
+            "transition": "延续上镜方向，让结果自然出现"
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "cta",
+              "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+              "voiceover": "",
+              "subtitle": "这周末，约个想见的人",
+              "material_id": ""
+            },
+            "planned_seconds": 4,
+            "minimum_visual_seconds": 2,
+            "continuity": "沿用开场人物、物件和动作方向",
+            "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+            "sound": "同期声渐弱",
+            "transition": "结果定格后淡入字幕"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 4,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 25,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+                  "voiceover": "等一下，我把手机放下。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "保留现场声，给动作留停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "cta",
+                  "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+                  "voiceover": "",
+                  "subtitle": "这周末，约个想见的人",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ]
+          },
+          "result": {
+            "passed": true,
+            "target_seconds": 25,
+            "total_seconds": 18,
+            "over_seconds": 0,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 5
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 9
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 0,
+                "reading_seconds": 2,
+                "estimated_seconds": 4
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "原创人物故事｜情境短片",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+                  "voiceover": "等一下，我把手机放下。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "保留现场声，给动作留停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "cta",
+                  "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+                  "voiceover": "",
+                  "subtitle": "这周末，约个想见的人",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "沿用开场人物、物件和动作方向",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ],
+            "material_ids": [],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买"
+            ],
+            "required_terms": []
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": false,
+          "issues": [
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。"
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "等一下，我把手机放下。"
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来"
+            },
+            {
+              "scene_id": "S03",
+              "field": "subtitle",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "这周末，约个想见的人"
+            }
+          ],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "原创人物故事｜情境短片",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "两个人面对面坐在咖啡桌前，桌上摆着两杯咖啡。其中一人划了两下手机，抬头发现对面的朋友正看着自己。",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "等一下，我把手机放下。",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "手机屏幕扣在桌上，两人抬杯碰了一下，接着面对面聊起来",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "定格上一镜的结果，在空白安全区叠加引导文字。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S03",
+              "field": "subtitle",
+              "text": "这周末，约个想见的人",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "STOP",
+      "model_calls": []
+    },
+    {
+      "step": 5,
+      "action": "STOP",
+      "reason": "存在无法核验的自由表述；请补充原文依据或将可修改内容标为参考。",
+      "args": {
+        "status": "NEEDS_REVIEW"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ]
+}

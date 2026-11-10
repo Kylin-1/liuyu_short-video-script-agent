@@ -1,0 +1,938 @@
+{
+  "model_mode": "mock",
+  "status": "NEEDS_REVIEW",
+  "status_text": "存在未核验内容",
+  "detail": "存在无法核验的自由表述；请补充原文依据或将可修改内容标为参考。",
+  "requested_fields": [],
+  "script": null,
+  "script_version": 1,
+  "revision_count": 0,
+  "checks": {
+    "version": 1,
+    "duration": {
+      "passed": true,
+      "target_seconds": 30,
+      "total_seconds": 23,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 3,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 3
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 4,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 4
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 5
+        },
+        {
+          "scene_id": "S04",
+          "planned_seconds": 6,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 6
+        },
+        {
+          "scene_id": "S05",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 0,
+          "reading_seconds": 3,
+          "estimated_seconds": 5
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": false,
+      "issues": [
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "装进包里完全不会漏水。"
+        }
+      ],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "岩途随行杯｜情境短片",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "玄关，包放在门边。同伴拿起包要走，主角伸手按住包带，另一只手指向杯盖。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "装进包里完全不会漏水。",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "同伴停住，把杯盖朝向主角；主角的手指停在锁扣旁。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "voiceover",
+          "text": "锁扣的位置，先看清。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+          "status": "VERIFIED",
+          "basis": "material.operation",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "action",
+          "text": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+          "status": "VERIFIED",
+          "basis": "material.visual",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "voiceover",
+          "text": "杯盖带滑动锁扣。",
+          "status": "VERIFIED",
+          "basis": "material.fact",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "杯盖带滑动锁扣"
+          ]
+        },
+        {
+          "scene_id": "S05",
+          "field": "action",
+          "text": "主角收回指着杯盖的手，接过包，与同伴一起走出门。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S05",
+          "field": "subtitle",
+          "text": "点开视频下方商品卡，看商品详情",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": null,
+    "creative_review": null
+  },
+  "creative_mode": "planned",
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [
+      {
+        "id": "C01",
+        "approach": "人物阻碍",
+        "audience_insight": "面向上班会带水杯的人，假设他们会关心「确认锁扣的位置后出门」；该洞察尚未经观众验证。",
+        "protagonist_goal": "确认锁扣的位置后出门",
+        "obstacle": "同伴准备离开，主角还没有看清锁扣的位置",
+        "product_role": "仅通过素材 D01 呈现「杯盖带滑动锁扣」",
+        "payoff": "主角收回指着杯盖的手，接过包，与同伴一起走出门。",
+        "cta_reason": "点开视频下方商品卡，看商品详情",
+        "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。用短句，在动作完成处切镜。",
+        "focus": "锁扣",
+        "setting": "玄关，包放在门边",
+        "opening": "同伴拿起包要走，主角伸手按住包带，另一只手指向杯盖。",
+        "hook_line": "装进包里完全不会漏水。",
+        "turn": "同伴停住，把杯盖朝向主角；主角的手指停在锁扣旁。",
+        "turn_line": "锁扣的位置，先看清。",
+        "resolution": "主角收回指着杯盖的手，接过包，与同伴一起走出门。",
+        "material_ids": [
+          "D01"
+        ],
+        "assumptions": [
+          "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+        ],
+        "field_origins": [
+          [
+            "setting",
+            "mock_proposal"
+          ],
+          [
+            "opening",
+            "mock_proposal"
+          ],
+          [
+            "hook_line",
+            "user_locked"
+          ],
+          [
+            "turn",
+            "mock_proposal"
+          ],
+          [
+            "turn_line",
+            "mock_proposal"
+          ],
+          [
+            "resolution",
+            "mock_proposal"
+          ]
+        ]
+      },
+      {
+        "id": "C02",
+        "approach": "细节悬念",
+        "audience_insight": "面向上班会带水杯的人，假设他们会关心「确认锁扣的位置后出门」；该洞察尚未经观众验证。",
+        "protagonist_goal": "确认锁扣的位置后出门",
+        "obstacle": "同伴准备离开，主角还没有看清锁扣的位置",
+        "product_role": "仅通过素材 D01 呈现「杯盖带滑动锁扣」",
+        "payoff": "主角收回指着杯盖的手，接过包，与同伴一起走出门。",
+        "cta_reason": "点开视频下方商品卡，看商品详情",
+        "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。用短句，在动作完成处切镜。",
+        "focus": "锁扣",
+        "setting": "玄关，包放在门边",
+        "opening": "近景先给出主角停在锁扣旁的手，同伴从画外伸手示意。",
+        "hook_line": "装进包里完全不会漏水。",
+        "turn": "主角停住动作，顺着同伴的手势看向镜头中央。",
+        "turn_line": "先看锁扣，再往下。",
+        "resolution": "主角收回指着杯盖的手，接过包，与同伴一起走出门。",
+        "material_ids": [
+          "D01"
+        ],
+        "assumptions": [
+          "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+        ],
+        "field_origins": [
+          [
+            "setting",
+            "mock_proposal"
+          ],
+          [
+            "opening",
+            "mock_proposal"
+          ],
+          [
+            "hook_line",
+            "user_locked"
+          ],
+          [
+            "turn",
+            "mock_proposal"
+          ],
+          [
+            "turn_line",
+            "mock_proposal"
+          ],
+          [
+            "resolution",
+            "mock_proposal"
+          ]
+        ]
+      }
+    ],
+    "selected_plan_id": "C01",
+    "selection_reason": "采用人物阻碍方案，先建立行动目标，再由有依据的细节承接剧情。",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "D01",
+          "subject": "岩途随行杯",
+          "aliases": [],
+          "tags": [],
+          "fact": "杯盖带滑动锁扣",
+          "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+          "source": "合成商品样片 RT-07",
+          "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "audit": {
+    "run_id": "ca12ed923a3d408f82f0d0dae3fdfc2a",
+    "elapsed_ms": 1.85,
+    "tool_calls": 3,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 7,
+    "max_steps": 20,
+    "input_sha256": "877d2ec80f94b2b929381591cb7a4a0aa1adeaca3ecbd9b3f130d0f043d09e4f",
+    "materials_sha256": "c68465de746c872637a8de77c745e77478aba616955b7a0cc51fd6a61dad1b97",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "5e2c25f45635b8b6e2294390d4915eb81b0dab069893a70d0ee074b9776d37ee"
+  },
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "llm_decisions": 0,
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "通勤随行杯的杯盖锁扣",
+      "audience": "上班会带水杯的人",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "快节奏、生活化",
+      "format": "story",
+      "subject": "岩途随行杯",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "hook_line": "装进包里完全不会漏水。",
+      "goal": "purchase",
+      "campaign": "随行杯上新",
+      "conversion_action": "open_product_card",
+      "conversion_destination": "视频下方商品卡",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "通勤随行杯的杯盖锁扣",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主题：通勤随行杯的杯盖锁扣",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "上班会带水杯的人",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "受众：上班会带水杯的人",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "平台：抖音",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "平台：抖音",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 2,
+          "text": "时长：30秒",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 2,
+            "text": "时长：30秒",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "快节奏、生活化",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "风格：快节奏、生活化",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：快节奏、生活化",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "story",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "内容形式：剧情",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "内容形式：剧情",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岩途随行杯",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "主体：岩途随行杯",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主体：岩途随行杯",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "画幅：竖屏",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "画幅：竖屏",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "hook_line": {
+        "selected": {
+          "value": "装进包里完全不会漏水。",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "开场台词：装进包里完全不会漏水。",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "装进包里完全不会漏水。",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "开场台词：装进包里完全不会漏水。",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "goal": {
+        "selected": {
+          "value": "purchase",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "主目标：促进购买",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主目标：促进购买",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "campaign": {
+        "selected": {
+          "value": "随行杯上新",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "业务场景：随行杯上新",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "业务场景：随行杯上新",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_action": {
+        "selected": {
+          "value": "open_product_card",
+          "kind": "brief_text",
+          "line": 4,
+          "text": "转化动作：点商品卡",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "转化动作：点商品卡",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_destination": {
+        "selected": {
+          "value": "视频下方商品卡",
+          "kind": "brief_text",
+          "line": 4,
+          "text": "承接入口：视频下方商品卡",
+          "source_file": "attack_leak.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [],
+    "materials": [
+      {
+        "id": "D01",
+        "subject": "岩途随行杯",
+        "aliases": [],
+        "tags": [],
+        "fact": "杯盖带滑动锁扣",
+        "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+        "source": "合成商品样片 RT-07",
+        "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+      }
+    ],
+    "material_sources": {
+      "D01": [
+        {
+          "line": 1,
+          "text": "[D01] 主体：岩途随行杯｜事实：杯盖带滑动锁扣｜操作：拇指沿杯盖凹槽推动锁扣，镜头跟住手指｜画面：拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见｜来源：合成商品样片 RT-07"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "绝对防漏",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      },
+      {
+        "kind": "banned",
+        "term": "永久保温",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": "purchase",
+        "audience": "上班会带水杯的人",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": "随行杯上新"
+      },
+      "creative": {
+        "format": "story",
+        "format_policy": "locked",
+        "style": "快节奏、生活化",
+        "requirements_policy": "locked",
+        "user_requirements": {
+          "hook_line": "装进包里完全不会漏水。"
+        }
+      },
+      "conversion": {
+        "action": "open_product_card",
+        "destination": "视频下方商品卡"
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "story"
+        },
+        {
+          "field": "creative.user_requirements.hook_line",
+          "value": "装进包里完全不会漏水。"
+        },
+        {
+          "kind": "banned",
+          "term": "绝对防漏",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        },
+        {
+          "kind": "banned",
+          "term": "永久保温",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "快节奏、生活化"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "通勤随行杯的杯盖锁扣",
+          "origin": "brief_text",
+          "source": {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "上班会带水杯的人",
+          "origin": "brief_text",
+          "source": {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "平台：抖音",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 2,
+            "text": "时长：30秒",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "快节奏、生活化",
+          "origin": "brief_text",
+          "source": {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：快节奏、生活化",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "story",
+          "origin": "brief_text",
+          "source": {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "内容形式：剧情",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岩途随行杯",
+          "origin": "brief_text",
+          "source": {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主体：岩途随行杯",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "画幅：竖屏",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.hook_line",
+          "value": "装进包里完全不会漏水。",
+          "origin": "brief_text",
+          "source": {
+            "value": "装进包里完全不会漏水。",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "开场台词：装进包里完全不会漏水。",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.primary",
+          "value": "purchase",
+          "origin": "brief_text",
+          "source": {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主目标：促进购买",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "context.campaign",
+          "value": "随行杯上新",
+          "origin": "brief_text",
+          "source": {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "业务场景：随行杯上新",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.action",
+          "value": "open_product_card",
+          "origin": "brief_text",
+          "source": {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "转化动作：点商品卡",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.destination",
+          "value": "视频下方商品卡",
+          "origin": "brief_text",
+          "source": {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "attack_leak.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  }
+}

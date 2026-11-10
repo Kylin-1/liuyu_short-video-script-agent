@@ -1,0 +1,599 @@
+{
+  "status": "READY",
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "云栖咖啡周末到店券",
+      "audience": "周末逛商圈、到店前会查优惠的访客",
+      "platform": "小红书",
+      "target_seconds": 25,
+      "style": "轻松、生活化",
+      "format": "story",
+      "subject": "云栖咖啡",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "goal": "store_visit",
+      "campaign": "周末门店活动",
+      "conversion_action": "claim_coupon",
+      "conversion_destination": "门店小程序",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "云栖咖啡周末到店券",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：云栖咖啡周末到店券",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "云栖咖啡周末到店券",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：云栖咖啡周末到店券",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "周末逛商圈、到店前会查优惠的访客",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：周末逛商圈、到店前会查优惠的访客",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "周末逛商圈、到店前会查优惠的访客",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：周末逛商圈、到店前会查优惠的访客",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "小红书",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：小红书",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "小红书",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：小红书",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 25,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "时长：25秒",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 25,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：25秒",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "轻松、生活化",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "风格：轻松、生活化",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "轻松、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：轻松、生活化",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "story",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：剧情",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "云栖咖啡",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：云栖咖啡",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "云栖咖啡",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：云栖咖啡",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "画幅：竖屏",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "goal": {
+        "selected": {
+          "value": "store_visit",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主目标：到店引流",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "store_visit",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：到店引流",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "campaign": {
+        "selected": {
+          "value": "周末门店活动",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "业务场景：周末门店活动",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "周末门店活动",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：周末门店活动",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_action": {
+        "selected": {
+          "value": "claim_coupon",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "转化动作：领券",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "claim_coupon",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：领券",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_destination": {
+        "selected": {
+          "value": "门店小程序",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "承接入口：门店小程序",
+          "source_file": "campaign_store.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "门店小程序",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：门店小程序",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [
+      {
+        "kind": "brief_text",
+        "line": 4,
+        "text": "优先用手机录屏与柜台实拍",
+        "source_file": "campaign_store.txt",
+        "section": "brief_text"
+      },
+      {
+        "kind": "brief_text",
+        "line": 4,
+        "text": "拍摄时遮住账号信息",
+        "source_file": "campaign_store.txt",
+        "section": "brief_text"
+      }
+    ],
+    "materials": [
+      {
+        "id": "T02",
+        "subject": "云栖咖啡",
+        "aliases": [],
+        "tags": [],
+        "fact": "周末到店指定拿铁立减5元，须出示小程序券码",
+        "visual": "店员扫完后，券码页显示核销成功，小票显示指定拿铁减5元，画面遮住账号信息",
+        "source": "合成门店录屏与核销记录 CF-02",
+        "operation": "点击「领券」，进入「我的券」，到柜台点开券码供店员扫描"
+      }
+    ],
+    "material_sources": {
+      "T02": [
+        {
+          "line": 1,
+          "text": "[T02] 主体：云栖咖啡｜事实：周末到店指定拿铁立减5元，须出示小程序券码｜操作：点击「领券」，进入「我的券」，到柜台点开券码供店员扫描｜画面：店员扫完后，券码页显示核销成功，小票显示指定拿铁减5元，画面遮住账号信息｜来源：合成门店录屏与核销记录 CF-02"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "人人有券",
+        "line": 1,
+        "text": "禁用词：人人有券、永久有效"
+      },
+      {
+        "kind": "banned",
+        "term": "永久有效",
+        "line": 1,
+        "text": "禁用词：人人有券、永久有效"
+      },
+      {
+        "kind": "required",
+        "term": "周末到店指定拿铁立减5元",
+        "line": 2,
+        "text": "必须说出「周末到店指定拿铁立减5元」。"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": "store_visit",
+        "audience": "周末逛商圈、到店前会查优惠的访客",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": "周末门店活动"
+      },
+      "creative": {
+        "format": "story",
+        "format_policy": "locked",
+        "style": "轻松、生活化",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": "claim_coupon",
+        "destination": "门店小程序"
+      },
+      "delivery": {
+        "platform": "小红书",
+        "max_seconds": 25,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 25
+        },
+        {
+          "field": "creative.format",
+          "value": "story"
+        },
+        {
+          "kind": "banned",
+          "term": "人人有券",
+          "line": 1,
+          "text": "禁用词：人人有券、永久有效"
+        },
+        {
+          "kind": "banned",
+          "term": "永久有效",
+          "line": 1,
+          "text": "禁用词：人人有券、永久有效"
+        },
+        {
+          "kind": "required",
+          "term": "周末到店指定拿铁立减5元",
+          "line": 2,
+          "text": "必须说出「周末到店指定拿铁立减5元」。"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "轻松、生活化"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "云栖咖啡周末到店券",
+          "origin": "brief_text",
+          "source": {
+            "value": "云栖咖啡周末到店券",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：云栖咖啡周末到店券",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "周末逛商圈、到店前会查优惠的访客",
+          "origin": "brief_text",
+          "source": {
+            "value": "周末逛商圈、到店前会查优惠的访客",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：周末逛商圈、到店前会查优惠的访客",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "小红书",
+          "origin": "brief_text",
+          "source": {
+            "value": "小红书",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：小红书",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 25,
+          "origin": "brief_text",
+          "source": {
+            "value": 25,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：25秒",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "轻松、生活化",
+          "origin": "brief_text",
+          "source": {
+            "value": "轻松、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：轻松、生活化",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "story",
+          "origin": "brief_text",
+          "source": {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "云栖咖啡",
+          "origin": "brief_text",
+          "source": {
+            "value": "云栖咖啡",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：云栖咖啡",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.primary",
+          "value": "store_visit",
+          "origin": "brief_text",
+          "source": {
+            "value": "store_visit",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：到店引流",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "context.campaign",
+          "value": "周末门店活动",
+          "origin": "brief_text",
+          "source": {
+            "value": "周末门店活动",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：周末门店活动",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.action",
+          "value": "claim_coupon",
+          "origin": "brief_text",
+          "source": {
+            "value": "claim_coupon",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：领券",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.destination",
+          "value": "门店小程序",
+          "origin": "brief_text",
+          "source": {
+            "value": "门店小程序",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：门店小程序",
+            "source_file": "campaign_store.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  },
+  "model_mode": "mock"
+}
