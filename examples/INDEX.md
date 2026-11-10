@@ -1,0 +1,51 @@
+# 本版运行结果
+
+所有条目由本版 CLI 重新运行；模型为 Mock。脚本只在 COMPLETED 时存在。
+
+| 用例 | 状态 | 秒数 | 原始输入 | 实际输出 | Trace |
+| --- | --- | --- | --- | --- | --- |
+| normal | COMPLETED | 22 | [输入](inputs/normal.json) | [结果](runs/normal.output.json) | [记录](runs/normal.trace.json) |
+| shorter | COMPLETED | 12 | [输入](inputs/shorter.json) | [结果](runs/shorter.output.json) | [记录](runs/shorter.trace.json) |
+| impossible | DURATION_UNMET | — | [输入](inputs/impossible.json) | [结果](runs/impossible.output.json) | [记录](runs/impossible.trace.json) |
+| missing_input | NEEDS_INPUT | — | [输入](inputs/missing_input.json) | [结果](runs/missing_input.output.json) | [记录](runs/missing_input.trace.json) |
+| no_material | MATERIAL_REQUIRED | — | [输入](inputs/no_material.json) | [结果](runs/no_material.output.json) | [记录](runs/no_material.trace.json) |
+| tool_failure | TOOL_FAILED | — | [输入](inputs/tool_failure.json) | [结果](runs/tool_failure.output.json) | [记录](runs/tool_failure.trace.json) |
+| tutorial | COMPLETED | 22 | [输入](inputs/tutorial.json) | [结果](runs/tutorial.output.json) | [记录](runs/tutorial.trace.json) |
+| campaign_store | COMPLETED | 23 | [输入](inputs/campaign_store.txt) | [结果](runs/campaign_store.output.json) | [记录](runs/campaign_store.trace.json) |
+| campaign_event | COMPLETED | 23 | [输入](inputs/campaign_event.txt) | [结果](runs/campaign_event.output.json) | [记录](runs/campaign_event.trace.json) |
+| fiction | NEEDS_REVIEW | — | [输入](inputs/fiction.json) | [结果](runs/fiction.output.json) | [记录](runs/fiction.trace.json) |
+| brand_blocked | COMPLETED | 22 | [输入](inputs/brand_blocked.json) | [结果](runs/brand_blocked.output.json) | [记录](runs/brand_blocked.trace.json) |
+| search_recovered | COMPLETED | 22 | [输入](inputs/search_recovered.json) | [结果](runs/search_recovered.output.json) | [记录](runs/search_recovered.trace.json) |
+| raw_brief | NEEDS_REVIEW | — | [输入](inputs/raw_brief.txt) | [结果](runs/raw_brief.output.json) | [记录](runs/raw_brief.trace.json) |
+| raw_conflict | NEEDS_INPUT | — | [输入](inputs/raw_conflict.txt) | [结果](runs/raw_conflict.output.json) | [记录](runs/raw_conflict.trace.json) |
+| raw_rule_blocked | QUALITY_FAILED | — | [输入](inputs/raw_rule_blocked.txt) | [结果](runs/raw_rule_blocked.output.json) | [记录](runs/raw_rule_blocked.trace.json) |
+| raw_production | NEEDS_REVIEW | — | [输入](inputs/raw_production.txt) | [结果](runs/raw_production.output.json) | [记录](runs/raw_production.trace.json) |
+| raw_production_short | NEEDS_REVIEW | — | [输入](inputs/raw_production_short.txt) | [结果](runs/raw_production_short.output.json) | [记录](runs/raw_production_short.trace.json) |
+| raw_tutorial | NEEDS_REVIEW | — | [输入](inputs/raw_tutorial.txt) | [结果](runs/raw_tutorial.output.json) | [记录](runs/raw_tutorial.trace.json) |
+| raw_proof_gap | MATERIAL_REQUIRED | — | [输入](inputs/raw_proof_gap.txt) | [结果](runs/raw_proof_gap.output.json) | [记录](runs/raw_proof_gap.trace.json) |
+| raw_intent_demo | COMPLETED | 26 | [输入](inputs/raw_intent_demo.txt) | [结果](runs/raw_intent_demo.output.json) | [记录](runs/raw_intent_demo.trace.json) |
+| raw_intent_story | COMPLETED | 23 | [输入](inputs/raw_intent_story.txt) | [结果](runs/raw_intent_story.output.json) | [记录](runs/raw_intent_story.trace.json) |
+| raw_intent_store | COMPLETED | 23 | [输入](inputs/raw_intent_store.txt) | [结果](runs/raw_intent_store.output.json) | [记录](runs/raw_intent_store.trace.json) |
+| raw_reference_p01 | NEEDS_REVIEW | — | [输入](inputs/raw_reference_p01.txt) | [结果](runs/raw_reference_p01.output.json) | [记录](runs/raw_reference_p01.trace.json) |
+| raw_rule_repaired | COMPLETED | 26 | [输入](inputs/raw_rule_repaired.txt) | [结果](runs/raw_rule_repaired.output.json) | [记录](runs/raw_rule_repaired.trace.json) |
+| raw_disclosure_repaired | COMPLETED | 26 | [输入](inputs/raw_disclosure_repaired.txt) | [结果](runs/raw_disclosure_repaired.output.json) | [记录](runs/raw_disclosure_repaired.trace.json) |
+| tool_budget | TOOL_LIMIT | — | [输入](inputs/normal.json) | [结果](runs/tool_budget.output.json) | [记录](runs/tool_budget.trace.json) |
+| raw_unbacked_claim | QUALITY_FAILED | — | [输入](inputs/raw_unbacked_claim.txt) | [结果](runs/raw_unbacked_claim.output.json) | [记录](runs/raw_unbacked_claim.trace.json) |
+| same_input_empty_catalog | MATERIAL_REQUIRED | — | [输入](inputs/normal.json) | [结果](runs/same_input_empty_catalog.output.json) | [记录](runs/same_input_empty_catalog.trace.json) |
+| p01_duration | COMPLETED | 14 | [输入](inputs/campaign_p01.txt) | [结果](runs/p01_duration.output.json) | [记录](runs/p01_duration.trace.json) |
+| attack_weight_locked | NEEDS_REVIEW | — | [输入](inputs/attack_weight_locked.txt) | [结果](runs/attack_weight_locked.output.json) | [记录](runs/attack_weight_locked.trace.json) |
+| attack_weight_reference | COMPLETED | 23 | [输入](inputs/attack_weight_reference.txt) | [结果](runs/attack_weight_reference.output.json) | [记录](runs/attack_weight_reference.trace.json) |
+| attack_leak | NEEDS_REVIEW | — | [输入](inputs/attack_leak.txt) | [结果](runs/attack_leak.output.json) | [记录](runs/attack_leak.trace.json) |
+| attack_moon | NEEDS_REVIEW | — | [输入](inputs/attack_moon.txt) | [结果](runs/attack_moon.output.json) | [记录](runs/attack_moon.trace.json) |
+| valid_custom_deferred | NEEDS_REVIEW | — | [输入](inputs/valid_custom_deferred.txt) | [结果](runs/valid_custom_deferred.output.json) | [记录](runs/valid_custom_deferred.trace.json) |
+| creative_sales | COMPLETED | 23 | [输入](inputs/raw_intent_story.txt) | [结果](runs/creative_sales.output.json) | [记录](runs/creative_sales.trace.json) |
+| creative_demo | COMPLETED | 26 | [输入](inputs/raw_intent_demo.txt) | [结果](runs/creative_demo.output.json) | [记录](runs/creative_demo.trace.json) |
+| creative_store | COMPLETED | 23 | [输入](inputs/campaign_store.txt) | [结果](runs/creative_store.output.json) | [记录](runs/creative_store.trace.json) |
+| creative_event | COMPLETED | 24 | [输入](inputs/campaign_event.txt) | [结果](runs/creative_event.output.json) | [记录](runs/creative_event.trace.json) |
+| creative_reference | COMPLETED | 23 | [输入](inputs/raw_creative_reference.txt) | [结果](runs/creative_reference.output.json) | [记录](runs/creative_reference.trace.json) |
+| creative_locked | QUALITY_FAILED | — | [输入](inputs/raw_creative_locked.txt) | [结果](runs/creative_locked.output.json) | [记录](runs/creative_locked.trace.json) |
+| creative_missing | NEEDS_INPUT | — | [输入](inputs/missing_input.json) | [结果](runs/creative_missing.output.json) | [记录](runs/creative_missing.trace.json) |
+| creative_no_material | MATERIAL_REQUIRED | — | [输入](inputs/no_material.json) | [结果](runs/creative_no_material.output.json) | [记录](runs/creative_no_material.trace.json) |
+| creative_tool_failure | TOOL_FAILED | — | [输入](inputs/tool_failure.json) | [结果](runs/creative_tool_failure.output.json) | [记录](runs/creative_tool_failure.trace.json) |
+| creative_short | COMPLETED | 13 | [输入](inputs/campaign_short.txt) | [结果](runs/creative_short.output.json) | [记录](runs/creative_short.trace.json) |
+| creative_impossible | DURATION_UNMET | — | [输入](inputs/impossible.json) | [结果](runs/creative_impossible.output.json) | [记录](runs/creative_impossible.trace.json) |

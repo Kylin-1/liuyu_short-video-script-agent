@@ -1,0 +1,410 @@
+{
+  "evidence_mode": "offline_mock",
+  "cases": [
+    {
+      "case": "normal",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/normal.json",
+      "seconds": 22,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "shorter",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/shorter.json",
+      "seconds": 12,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "impossible",
+      "status": "DURATION_UNMET",
+      "mode": "legacy",
+      "input": "examples/inputs/impossible.json",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "missing_input",
+      "status": "NEEDS_INPUT",
+      "mode": "legacy",
+      "input": "examples/inputs/missing_input.json",
+      "seconds": null,
+      "steps": 1,
+      "llm_decisions": 0
+    },
+    {
+      "case": "no_material",
+      "status": "MATERIAL_REQUIRED",
+      "mode": "legacy",
+      "input": "examples/inputs/no_material.json",
+      "seconds": null,
+      "steps": 3,
+      "llm_decisions": 0
+    },
+    {
+      "case": "tool_failure",
+      "status": "TOOL_FAILED",
+      "mode": "legacy",
+      "input": "examples/inputs/tool_failure.json",
+      "seconds": null,
+      "steps": 3,
+      "llm_decisions": 0
+    },
+    {
+      "case": "tutorial",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/tutorial.json",
+      "seconds": 22,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "campaign_store",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/campaign_store.txt",
+      "seconds": 23,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "campaign_event",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/campaign_event.txt",
+      "seconds": 23,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "fiction",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/fiction.json",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "brand_blocked",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/brand_blocked.json",
+      "seconds": 22,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "search_recovered",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/search_recovered.json",
+      "seconds": 22,
+      "steps": 7,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_brief",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_brief.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_conflict",
+      "status": "NEEDS_INPUT",
+      "mode": "intake",
+      "input": "examples/inputs/raw_conflict.txt",
+      "seconds": null,
+      "steps": 0,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_rule_blocked",
+      "status": "QUALITY_FAILED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_rule_blocked.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_production",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_production.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_production_short",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_production_short.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_tutorial",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_tutorial.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_proof_gap",
+      "status": "MATERIAL_REQUIRED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_proof_gap.txt",
+      "seconds": null,
+      "steps": 2,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_intent_demo",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_intent_demo.txt",
+      "seconds": 26,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_intent_story",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_intent_story.txt",
+      "seconds": 23,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_intent_store",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_intent_store.txt",
+      "seconds": 23,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_reference_p01",
+      "status": "NEEDS_REVIEW",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_reference_p01.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_rule_repaired",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_rule_repaired.txt",
+      "seconds": 26,
+      "steps": 6,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_disclosure_repaired",
+      "status": "COMPLETED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_disclosure_repaired.txt",
+      "seconds": 26,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "tool_budget",
+      "status": "TOOL_LIMIT",
+      "mode": "legacy",
+      "input": "examples/inputs/normal.json",
+      "seconds": null,
+      "steps": 4,
+      "llm_decisions": 0
+    },
+    {
+      "case": "raw_unbacked_claim",
+      "status": "QUALITY_FAILED",
+      "mode": "legacy",
+      "input": "examples/inputs/raw_unbacked_claim.txt",
+      "seconds": null,
+      "steps": 5,
+      "llm_decisions": 0
+    },
+    {
+      "case": "same_input_empty_catalog",
+      "status": "MATERIAL_REQUIRED",
+      "mode": "legacy",
+      "input": "examples/inputs/normal.json",
+      "seconds": null,
+      "steps": 3,
+      "llm_decisions": 0
+    },
+    {
+      "case": "p01_duration",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/campaign_p01.txt",
+      "seconds": 14,
+      "steps": 11,
+      "llm_decisions": 0
+    },
+    {
+      "case": "attack_weight_locked",
+      "status": "NEEDS_REVIEW",
+      "mode": "planned",
+      "input": "examples/inputs/attack_weight_locked.txt",
+      "seconds": null,
+      "steps": 7,
+      "llm_decisions": 0
+    },
+    {
+      "case": "attack_weight_reference",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/attack_weight_reference.txt",
+      "seconds": 23,
+      "steps": 12,
+      "llm_decisions": 0
+    },
+    {
+      "case": "attack_leak",
+      "status": "NEEDS_REVIEW",
+      "mode": "planned",
+      "input": "examples/inputs/attack_leak.txt",
+      "seconds": null,
+      "steps": 7,
+      "llm_decisions": 0
+    },
+    {
+      "case": "attack_moon",
+      "status": "NEEDS_REVIEW",
+      "mode": "planned",
+      "input": "examples/inputs/attack_moon.txt",
+      "seconds": null,
+      "steps": 7,
+      "llm_decisions": 0
+    },
+    {
+      "case": "valid_custom_deferred",
+      "status": "NEEDS_REVIEW",
+      "mode": "planned",
+      "input": "examples/inputs/valid_custom_deferred.txt",
+      "seconds": null,
+      "steps": 7,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_sales",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/raw_intent_story.txt",
+      "seconds": 23,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_demo",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/raw_intent_demo.txt",
+      "seconds": 26,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_store",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/campaign_store.txt",
+      "seconds": 23,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_event",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/campaign_event.txt",
+      "seconds": 24,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_reference",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/raw_creative_reference.txt",
+      "seconds": 23,
+      "steps": 14,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_locked",
+      "status": "QUALITY_FAILED",
+      "mode": "planned",
+      "input": "examples/inputs/raw_creative_locked.txt",
+      "seconds": null,
+      "steps": 9,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_missing",
+      "status": "NEEDS_INPUT",
+      "mode": "planned",
+      "input": "examples/inputs/missing_input.json",
+      "seconds": null,
+      "steps": 1,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_no_material",
+      "status": "MATERIAL_REQUIRED",
+      "mode": "planned",
+      "input": "examples/inputs/no_material.json",
+      "seconds": null,
+      "steps": 3,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_tool_failure",
+      "status": "TOOL_FAILED",
+      "mode": "planned",
+      "input": "examples/inputs/tool_failure.json",
+      "seconds": null,
+      "steps": 3,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_short",
+      "status": "COMPLETED",
+      "mode": "planned",
+      "input": "examples/inputs/campaign_short.txt",
+      "seconds": 13,
+      "steps": 11,
+      "llm_decisions": 0
+    },
+    {
+      "case": "creative_impossible",
+      "status": "DURATION_UNMET",
+      "mode": "planned",
+      "input": "examples/inputs/impossible.json",
+      "seconds": null,
+      "steps": 7,
+      "llm_decisions": 0
+    }
+  ]
+}
