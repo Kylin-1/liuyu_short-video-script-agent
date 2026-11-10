@@ -1,6 +1,6 @@
 # 中文短视频脚本 Agent
 
-项目地址：[https://github.com/Kylin-1/27-_-_AIAgent-_-04-](https://github.com/Kylin-1/27-_-_AIAgent-_-04-)
+项目地址：[https://github.com/Kylin-1/liuyu_short-video-script-agent](https://github.com/Kylin-1/liuyu_short-video-script-agent)
 
 本项目面向商品带货、到店引流、活动推广等创作场景，将制作需求、产品素材和品牌规则转化为可编辑的中文分镜脚本。系统通过制片人、编剧、导演和审核角色协作，在生成过程中执行素材检索、时长估算及规则检查，并依据检查结果补充检索、修改脚本、请求资料或结束任务。
 

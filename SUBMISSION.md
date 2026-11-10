@@ -1,6 +1,6 @@
 # 项目提交信息
 
-项目地址：[https://github.com/Kylin-1/27-_-_AIAgent-_-04-](https://github.com/Kylin-1/27-_-_AIAgent-_-04-)
+项目地址：[https://github.com/Kylin-1/liuyu_short-video-script-agent](https://github.com/Kylin-1/liuyu_short-video-script-agent)
 
 项目名称：中文短视频脚本 Agent  
 提交题目：第 04 题——短视频脚本 Agent  
