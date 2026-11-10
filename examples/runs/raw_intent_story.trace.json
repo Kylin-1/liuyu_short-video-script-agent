@@ -1,0 +1,1372 @@
+{
+  "model_mode": "mock",
+  "status": "COMPLETED",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 1,
+    "duration": {
+      "passed": true,
+      "target_seconds": 30,
+      "total_seconds": 23,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 3,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 3
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 4,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 4
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 5
+        },
+        {
+          "scene_id": "S04",
+          "planned_seconds": 6,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 6
+        },
+        {
+          "scene_id": "S05",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 0,
+          "reading_seconds": 3,
+          "estimated_seconds": 5
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": true,
+      "issues": [],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "岩途随行杯｜情境短片",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "主角抬手正要收起样品，同伴按住盒盖。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "等一下，这款你看清了吗？",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "同伴把注意力从外盒转到商品细节。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+          "status": "VERIFIED",
+          "basis": "material.operation",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "action",
+          "text": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+          "status": "VERIFIED",
+          "basis": "material.visual",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "voiceover",
+          "text": "杯盖带滑动锁扣。",
+          "status": "VERIFIED",
+          "basis": "material.fact",
+          "material_ids": [
+            "D01"
+          ],
+          "quotes": [
+            "杯盖带滑动锁扣"
+          ]
+        },
+        {
+          "scene_id": "S05",
+          "field": "action",
+          "text": "主角看过样品细节，把它留在面前。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S05",
+          "field": "subtitle",
+          "text": "点开视频下方商品卡，看商品详情",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": {
+      "passed": true,
+      "issues": [],
+      "scope": "Mock 核对素材与兑现镜头，检查独立转折及人物结局",
+      "version": 1
+    },
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "791a03b1042743d29bd703abace04932",
+    "elapsed_ms": 2.06,
+    "tool_calls": 3,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 6,
+    "max_steps": 20,
+    "input_sha256": "db0d4fab7978ca2fdc0a878fbb22e613b7d41dfc7eeae622c4ecd8db44a1a215",
+    "materials_sha256": "c68465de746c872637a8de77c745e77478aba616955b7a0cc51fd6a61dad1b97",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "5e2c25f45635b8b6e2294390d4915eb81b0dab069893a70d0ee074b9776d37ee"
+  },
+  "creative_mode": "legacy",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "D01",
+          "subject": "岩途随行杯",
+          "aliases": [],
+          "tags": [],
+          "fact": "杯盖带滑动锁扣",
+          "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+          "source": "合成商品样片 RT-07",
+          "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": ""
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "岩途随行杯",
+            "query": ""
+          },
+          "result": [
+            {
+              "id": "D01",
+              "subject": "岩途随行杯",
+              "aliases": [],
+              "tags": [],
+              "fact": "杯盖带滑动锁扣",
+              "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+              "source": "合成商品样片 RT-07",
+              "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+            }
+          ]
+        }
+      ],
+      "role": "道具",
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "WRITE",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "WRITE",
+      "reason": "按可用依据起草中文文案。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "岩途随行杯｜情境短片",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "hook",
+            "action": "主角抬手正要收起样品，同伴按住盒盖。",
+            "voiceover": "等一下，这款你看清了吗？",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "turn",
+            "action": "同伴把注意力从外盒转到商品细节。",
+            "voiceover": "",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S03",
+            "purpose": "operation",
+            "action": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+            "voiceover": "",
+            "subtitle": "",
+            "material_id": "D01"
+          },
+          {
+            "id": "S04",
+            "purpose": "payoff",
+            "action": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+            "voiceover": "杯盖带滑动锁扣。",
+            "subtitle": "",
+            "material_id": "D01"
+          },
+          {
+            "id": "S05",
+            "purpose": "resolution",
+            "action": "主角看过样品细节，把它留在面前。",
+            "voiceover": "",
+            "subtitle": "点开视频下方商品卡，看商品详情",
+            "material_id": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": false
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "hook",
+              "action": "主角抬手正要收起样品，同伴按住盒盖。",
+              "voiceover": "等一下，这款你看清了吗？",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 3,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+            "framing": "近景，从人物正在做的动作切入",
+            "sound": "先入现场声，台词跟动作走",
+            "transition": "动作完成即切，避免额外停顿"
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "turn",
+              "action": "同伴把注意力从外盒转到商品细节。",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 4,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+            "framing": "反打人物反应，保留阻碍所在的位置",
+            "sound": "停半拍后接转折台词",
+            "transition": "动作完成即切，避免额外停顿"
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "operation",
+              "action": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": "D01"
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+            "framing": "切手部特写，交代关键一步",
+            "sound": "保留动作同期声",
+            "transition": "动作完成即切，避免额外停顿"
+          },
+          {
+            "beat": {
+              "id": "S04",
+              "purpose": "payoff",
+              "action": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+              "voiceover": "杯盖带滑动锁扣。",
+              "subtitle": "",
+              "material_id": "D01"
+            },
+            "planned_seconds": 6,
+            "minimum_visual_seconds": 3,
+            "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+            "framing": "特写保留素材里的可见结果",
+            "sound": "结果出现后接商品事实口播",
+            "transition": "动作完成即切，避免额外停顿"
+          },
+          {
+            "beat": {
+              "id": "S05",
+              "purpose": "resolution",
+              "action": "主角看过样品细节，把它留在面前。",
+              "voiceover": "",
+              "subtitle": "点开视频下方商品卡，看商品详情",
+              "material_id": ""
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 3,
+            "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+            "framing": "拉回人物，拍完决定与行动",
+            "sound": "保留现场声",
+            "transition": "动作完成即切，避免额外停顿"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 4,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 30,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "主角抬手正要收起样品，同伴按住盒盖。",
+                  "voiceover": "等一下，这款你看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，从人物正在做的动作切入",
+                "sound": "先入现场声，台词跟动作走",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "turn",
+                  "action": "同伴把注意力从外盒转到商品细节。",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "反打人物反应，保留阻碍所在的位置",
+                "sound": "停半拍后接转折台词",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "operation",
+                  "action": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "D01"
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "切手部特写，交代关键一步",
+                "sound": "保留动作同期声",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "payoff",
+                  "action": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "D01"
+                },
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "特写保留素材里的可见结果",
+                "sound": "结果出现后接商品事实口播",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S05",
+                  "purpose": "resolution",
+                  "action": "主角看过样品细节，把它留在面前。",
+                  "voiceover": "",
+                  "subtitle": "点开视频下方商品卡，看商品详情",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "拉回人物，拍完决定与行动",
+                "sound": "保留现场声",
+                "transition": "动作完成即切，避免额外停顿"
+              }
+            ]
+          },
+          "result": {
+            "passed": true,
+            "target_seconds": 30,
+            "total_seconds": 23,
+            "over_seconds": 0,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 3
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 4
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 5
+              },
+              {
+                "scene_id": "S04",
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 3,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 6
+              },
+              {
+                "scene_id": "S05",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 3,
+                "spoken_seconds": 0,
+                "reading_seconds": 3,
+                "estimated_seconds": 5
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "岩途随行杯｜情境短片",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "主角抬手正要收起样品，同伴按住盒盖。",
+                  "voiceover": "等一下，这款你看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，从人物正在做的动作切入",
+                "sound": "先入现场声，台词跟动作走",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "turn",
+                  "action": "同伴把注意力从外盒转到商品细节。",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "反打人物反应，保留阻碍所在的位置",
+                "sound": "停半拍后接转折台词",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "operation",
+                  "action": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "D01"
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "切手部特写，交代关键一步",
+                "sound": "保留动作同期声",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "payoff",
+                  "action": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "D01"
+                },
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "特写保留素材里的可见结果",
+                "sound": "结果出现后接商品事实口播",
+                "transition": "动作完成即切，避免额外停顿"
+              },
+              {
+                "beat": {
+                  "id": "S05",
+                  "purpose": "resolution",
+                  "action": "主角看过样品细节，把它留在面前。",
+                  "voiceover": "",
+                  "subtitle": "点开视频下方商品卡，看商品详情",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岩途随行杯），证据镜头沿用同一次操作的原顺序",
+                "framing": "拉回人物，拍完决定与行动",
+                "sound": "保留现场声",
+                "transition": "动作完成即切，避免额外停顿"
+              }
+            ],
+            "material_ids": [
+              "D01"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买",
+              "绝对防漏",
+              "永久保温"
+            ],
+            "required_terms": []
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": true,
+          "issues": [],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "岩途随行杯｜情境短片",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "主角抬手正要收起样品，同伴按住盒盖。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "等一下，这款你看清了吗？",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "同伴把注意力从外盒转到商品细节。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指",
+              "status": "VERIFIED",
+              "basis": "material.operation",
+              "material_ids": [
+                "D01"
+              ],
+              "quotes": [
+                "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+              ]
+            },
+            {
+              "scene_id": "S04",
+              "field": "action",
+              "text": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "D01"
+              ],
+              "quotes": [
+                "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见"
+              ]
+            },
+            {
+              "scene_id": "S04",
+              "field": "voiceover",
+              "text": "杯盖带滑动锁扣。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "D01"
+              ],
+              "quotes": [
+                "杯盖带滑动锁扣"
+              ]
+            },
+            {
+              "scene_id": "S05",
+              "field": "action",
+              "text": "主角看过样品细节，把它留在面前。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S05",
+              "field": "subtitle",
+              "text": "点开视频下方商品卡，看商品详情",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "REVIEW",
+      "model_calls": []
+    },
+    {
+      "step": 5,
+      "action": "REVIEW",
+      "reason": "时长和规则通过，核对事实、画面与镜头承接。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "role": "审核",
+      "observation": {
+        "passed": true,
+        "issues": [],
+        "scope": "Mock 核对素材与兑现镜头，检查独立转折及人物结局",
+        "version": 1
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "DELIVER",
+      "model_calls": []
+    },
+    {
+      "step": 6,
+      "action": "DELIVER",
+      "reason": "当前版本的硬性检查与适用的创作诊断均通过。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ],
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "通勤随行杯的杯盖锁扣",
+      "audience": "上班会带水杯的人",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "快节奏、生活化",
+      "format": "story",
+      "subject": "岩途随行杯",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "goal": "purchase",
+      "campaign": "随行杯上新",
+      "conversion_action": "open_product_card",
+      "conversion_destination": "视频下方商品卡",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "通勤随行杯的杯盖锁扣",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：通勤随行杯的杯盖锁扣",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "上班会带水杯的人",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：上班会带水杯的人",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：抖音",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "时长：30秒",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "快节奏、生活化",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "风格：快节奏、生活化",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：快节奏、生活化",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "story",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：剧情",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岩途随行杯",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：岩途随行杯",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "画幅：竖屏",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "goal": {
+        "selected": {
+          "value": "purchase",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主目标：促进购买",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进购买",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "campaign": {
+        "selected": {
+          "value": "随行杯上新",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "业务场景：随行杯上新",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：随行杯上新",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_action": {
+        "selected": {
+          "value": "open_product_card",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "转化动作：点商品卡",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：点商品卡",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_destination": {
+        "selected": {
+          "value": "视频下方商品卡",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "承接入口：视频下方商品卡",
+          "source_file": "raw_intent_story.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [],
+    "materials": [
+      {
+        "id": "D01",
+        "subject": "岩途随行杯",
+        "aliases": [],
+        "tags": [],
+        "fact": "杯盖带滑动锁扣",
+        "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+        "source": "合成商品样片 RT-07",
+        "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+      }
+    ],
+    "material_sources": {
+      "D01": [
+        {
+          "line": 1,
+          "text": "[D01] 主体：岩途随行杯｜事实：杯盖带滑动锁扣｜操作：拇指沿杯盖凹槽推动锁扣，镜头跟住手指｜画面：拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见｜来源：合成商品样片 RT-07"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "绝对防漏",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      },
+      {
+        "kind": "banned",
+        "term": "永久保温",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": "purchase",
+        "audience": "上班会带水杯的人",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": "随行杯上新"
+      },
+      "creative": {
+        "format": "story",
+        "format_policy": "locked",
+        "style": "快节奏、生活化",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": "open_product_card",
+        "destination": "视频下方商品卡"
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "story"
+        },
+        {
+          "kind": "banned",
+          "term": "绝对防漏",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        },
+        {
+          "kind": "banned",
+          "term": "永久保温",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "快节奏、生活化"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "通勤随行杯的杯盖锁扣",
+          "origin": "brief_text",
+          "source": {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "上班会带水杯的人",
+          "origin": "brief_text",
+          "source": {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "快节奏、生活化",
+          "origin": "brief_text",
+          "source": {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：快节奏、生活化",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "story",
+          "origin": "brief_text",
+          "source": {
+            "value": "story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岩途随行杯",
+          "origin": "brief_text",
+          "source": {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.primary",
+          "value": "purchase",
+          "origin": "brief_text",
+          "source": {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进购买",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "context.campaign",
+          "value": "随行杯上新",
+          "origin": "brief_text",
+          "source": {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：随行杯上新",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.action",
+          "value": "open_product_card",
+          "origin": "brief_text",
+          "source": {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：点商品卡",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.destination",
+          "value": "视频下方商品卡",
+          "origin": "brief_text",
+          "source": {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "raw_intent_story.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  }
+}

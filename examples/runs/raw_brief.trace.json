@@ -1,0 +1,1440 @@
+{
+  "model_mode": "mock",
+  "status": "NEEDS_REVIEW",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 1,
+    "duration": {
+      "passed": true,
+      "target_seconds": 30,
+      "total_seconds": 26,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 5
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 8,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 8
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 9,
+          "minimum_visual_seconds": 4,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 9
+        },
+        {
+          "scene_id": "S04",
+          "planned_seconds": 4,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 0,
+          "reading_seconds": 2,
+          "estimated_seconds": 4
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": false,
+      "issues": [
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。"
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "想逛下午场？先看场次。"
+        },
+        {
+          "scene_id": "S04",
+          "field": "subtitle",
+          "code": "UNVERIFIED_CONTENT",
+          "value": "点活动页，查看可约场次"
+        }
+      ],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "岸边手作市集｜细节演示",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "想逛下午场？先看场次。",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "进入活动页，选中下午场并点击预约",
+          "status": "VERIFIED",
+          "basis": "material.operation",
+          "material_ids": [
+            "P02"
+          ],
+          "quotes": [
+            "进入活动页，选中下午场并点击预约"
+          ]
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "提交后页面显示已预约，镜头保留场次标签",
+          "status": "VERIFIED",
+          "basis": "material.visual",
+          "material_ids": [
+            "P02"
+          ],
+          "quotes": [
+            "提交后页面显示已预约，镜头保留场次标签"
+          ]
+        },
+        {
+          "scene_id": "S03",
+          "field": "voiceover",
+          "text": "活动页支持场次预约。",
+          "status": "VERIFIED",
+          "basis": "material.fact",
+          "material_ids": [
+            "P02"
+          ],
+          "quotes": [
+            "活动页支持场次预约"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "action",
+          "text": "定格上一镜的结果，在空白安全区叠加引导文字。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S04",
+          "field": "subtitle",
+          "text": "点活动页，查看可约场次",
+          "status": "UNKNOWN",
+          "basis": null,
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": null,
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "b7fef1d6e0444da8b6a818c32ac55c38",
+    "elapsed_ms": 1.15,
+    "tool_calls": 3,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 5,
+    "max_steps": 20,
+    "input_sha256": "5f0722caf47c0a316471ba6b446c78c7e5b2081bd72b9e2ceac37a4c42b3f712",
+    "materials_sha256": "4e4060f56c3825ad8893682dd22004c20b63b7eabc9bd39c0e706ae0861cc381",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "dbaf36ab6128dff6d25790788cea6c5c444e8a9d944b02d39f8b52ebdc8835dd"
+  },
+  "creative_mode": "legacy",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "P02",
+          "subject": "岸边手作市集",
+          "aliases": [],
+          "tags": [],
+          "fact": "活动页支持场次预约",
+          "visual": "提交后页面显示已预约，镜头保留场次标签",
+          "source": "合成活动报名页 EVT-04",
+          "operation": "进入活动页，选中下午场并点击预约"
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": ""
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "岸边手作市集",
+            "query": "",
+            "material_id": "P02"
+          },
+          "result": [
+            {
+              "id": "P02",
+              "subject": "岸边手作市集",
+              "aliases": [],
+              "tags": [],
+              "fact": "活动页支持场次预约",
+              "visual": "提交后页面显示已预约，镜头保留场次标签",
+              "source": "合成活动报名页 EVT-04",
+              "operation": "进入活动页，选中下午场并点击预约"
+            }
+          ]
+        }
+      ],
+      "role": "道具",
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "WRITE",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "WRITE",
+      "reason": "按可用依据起草中文文案。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "岸边手作市集｜细节演示",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "hook",
+            "action": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+            "voiceover": "想逛下午场？先看场次。",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "operation",
+            "action": "进入活动页，选中下午场并点击预约",
+            "voiceover": "",
+            "subtitle": "",
+            "material_id": "P02"
+          },
+          {
+            "id": "S03",
+            "purpose": "payoff",
+            "action": "提交后页面显示已预约，镜头保留场次标签",
+            "voiceover": "活动页支持场次预约。",
+            "subtitle": "",
+            "material_id": "P02"
+          },
+          {
+            "id": "S04",
+            "purpose": "cta",
+            "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+            "voiceover": "",
+            "subtitle": "点活动页，查看可约场次",
+            "material_id": "P02"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": false
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "hook",
+              "action": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+              "voiceover": "想逛下午场？先看场次。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+            "framing": "近景，动作落在画面中心",
+            "sound": "先留现场声，再进开场台词",
+            "transition": "在动作最清楚处切入"
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "operation",
+              "action": "进入活动页，选中下午场并点击预约",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": "P02"
+            },
+            "planned_seconds": 8,
+            "minimum_visual_seconds": 3,
+            "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+            "framing": "操作特写，保留手势或光标的完整路径",
+            "sound": "保留同期声，静音录屏保持无声",
+            "transition": "在操作开始时切入，保留触发瞬间"
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "payoff",
+              "action": "提交后页面显示已预约，镜头保留场次标签",
+              "voiceover": "活动页支持场次预约。",
+              "subtitle": "",
+              "material_id": "P02"
+            },
+            "planned_seconds": 9,
+            "minimum_visual_seconds": 4,
+            "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+            "framing": "结果特写，关键细节留在安全区",
+            "sound": "结果出现后再入口播，保留短停顿",
+            "transition": "延续上镜方向，让结果自然出现"
+          },
+          {
+            "beat": {
+              "id": "S04",
+              "purpose": "cta",
+              "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+              "voiceover": "",
+              "subtitle": "点活动页，查看可约场次",
+              "material_id": "P02"
+            },
+            "planned_seconds": 4,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+            "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+            "sound": "同期声渐弱",
+            "transition": "结果定格后淡入字幕"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 4,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 30,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+                  "voiceover": "想逛下午场？先看场次。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "进入活动页，选中下午场并点击预约",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "提交后页面显示已预约，镜头保留场次标签",
+                  "voiceover": "活动页支持场次预约。",
+                  "subtitle": "",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+                  "voiceover": "",
+                  "subtitle": "点活动页，查看可约场次",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ]
+          },
+          "result": {
+            "passed": true,
+            "target_seconds": 30,
+            "total_seconds": 26,
+            "over_seconds": 0,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 5
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 8
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 9
+              },
+              {
+                "scene_id": "S04",
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 0,
+                "reading_seconds": 2,
+                "estimated_seconds": 4
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "岸边手作市集｜细节演示",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+                  "voiceover": "想逛下午场？先看场次。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "进入活动页，选中下午场并点击预约",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "提交后页面显示已预约，镜头保留场次标签",
+                  "voiceover": "活动页支持场次预约。",
+                  "subtitle": "",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "定格上一镜的结果，在空白安全区叠加引导文字。",
+                  "voiceover": "",
+                  "subtitle": "点活动页，查看可约场次",
+                  "material_id": "P02"
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（岸边手作市集），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ],
+            "material_ids": [
+              "P02"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买",
+              "免预约"
+            ],
+            "required_terms": [
+              "活动页支持场次预约"
+            ]
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": false,
+          "issues": [
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。"
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "想逛下午场？先看场次。"
+            },
+            {
+              "scene_id": "S04",
+              "field": "subtitle",
+              "code": "UNVERIFIED_CONTENT",
+              "value": "点活动页，查看可约场次"
+            }
+          ],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "岸边手作市集｜细节演示",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "想逛下午场？先看场次。",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "进入活动页，选中下午场并点击预约",
+              "status": "VERIFIED",
+              "basis": "material.operation",
+              "material_ids": [
+                "P02"
+              ],
+              "quotes": [
+                "进入活动页，选中下午场并点击预约"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "提交后页面显示已预约，镜头保留场次标签",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "P02"
+              ],
+              "quotes": [
+                "提交后页面显示已预约，镜头保留场次标签"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "voiceover",
+              "text": "活动页支持场次预约。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "P02"
+              ],
+              "quotes": [
+                "活动页支持场次预约"
+              ]
+            },
+            {
+              "scene_id": "S04",
+              "field": "action",
+              "text": "定格上一镜的结果，在空白安全区叠加引导文字。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S04",
+              "field": "subtitle",
+              "text": "点活动页，查看可约场次",
+              "status": "UNKNOWN",
+              "basis": null,
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "STOP",
+      "model_calls": []
+    },
+    {
+      "step": 5,
+      "action": "STOP",
+      "reason": "存在无法核验的自由表述；请补充原文依据或将可修改内容标为参考。",
+      "args": {
+        "status": "NEEDS_REVIEW"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ],
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "岸边手作市集周末预约的短片",
+      "audience": "想周末结伴出门的人",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "轻快直接",
+      "format": "demo",
+      "subject": "岸边手作市集",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "objective": "看完能找到预约入口，并知道需要选择场次",
+      "setting": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+      "opening": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+      "hook_line": "想逛下午场？先看场次。",
+      "visible_result": "页面显示已预约",
+      "proof_id": "P02",
+      "cta": "点活动页，查看可约场次",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "岸边手作市集周末预约的短片",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "想拍一条关于岸边手作市集周末预约的短片",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岸边手作市集周末预约的短片",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "想拍一条关于岸边手作市集周末预约的短片",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "想周末结伴出门的人",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "给想周末结伴出门的人",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "想周末结伴出门的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "给想周末结伴出门的人",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "发抖音",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "发抖音",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 2,
+          "text": "时长控制在0.5分钟内",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 2,
+            "text": "时长控制在0.5分钟内",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "轻快直接",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "调性偏轻快直接",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "轻快直接",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "调性偏轻快直接",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "demo",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "内容形式：演示",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "内容形式：演示",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岸边手作市集",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "产品是岸边手作市集",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岸边手作市集",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "产品是岸边手作市集",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "画幅：竖屏",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "画幅：竖屏",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "objective": {
+        "selected": {
+          "value": "看完能找到预约入口，并知道需要选择场次",
+          "kind": "brief_text",
+          "line": 5,
+          "text": "希望观众看完能找到预约入口，并知道需要选择场次",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "看完能找到预约入口，并知道需要选择场次",
+            "kind": "brief_text",
+            "line": 5,
+            "text": "希望观众看完能找到预约入口，并知道需要选择场次",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "setting": {
+        "selected": {
+          "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+          "kind": "brief_text",
+          "line": 6,
+          "text": "拍摄场景：市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+            "kind": "brief_text",
+            "line": 6,
+            "text": "拍摄场景：市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "opening": {
+        "selected": {
+          "value": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+          "kind": "brief_text",
+          "line": 7,
+          "text": "开场动作：两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+            "kind": "brief_text",
+            "line": 7,
+            "text": "开场动作：两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "hook_line": {
+        "selected": {
+          "value": "想逛下午场？先看场次。",
+          "kind": "brief_text",
+          "line": 8,
+          "text": "开场台词：想逛下午场？先看场次。",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "想逛下午场？先看场次。",
+            "kind": "brief_text",
+            "line": 8,
+            "text": "开场台词：想逛下午场？先看场次。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "visible_result": {
+        "selected": {
+          "value": "页面显示已预约",
+          "kind": "brief_text",
+          "line": 9,
+          "text": "可见结果：页面显示已预约",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "页面显示已预约",
+            "kind": "brief_text",
+            "line": 9,
+            "text": "可见结果：页面显示已预约",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "proof_id": {
+        "selected": {
+          "value": "P02",
+          "kind": "brief_text",
+          "line": 10,
+          "text": "证据素材 ID：P02",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "P02",
+            "kind": "brief_text",
+            "line": 10,
+            "text": "证据素材 ID：P02",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "cta": {
+        "selected": {
+          "value": "点活动页，查看可约场次",
+          "kind": "brief_text",
+          "line": 11,
+          "text": "收尾引导：点活动页，查看可约场次",
+          "source_file": "raw_brief.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "点活动页，查看可约场次",
+            "kind": "brief_text",
+            "line": 11,
+            "text": "收尾引导：点活动页，查看可约场次",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [
+      {
+        "kind": "brief_text",
+        "line": 4,
+        "text": "优先用报名页录屏和市集入口实拍",
+        "source_file": "raw_brief.txt",
+        "section": "brief_text"
+      }
+    ],
+    "materials": [
+      {
+        "id": "M01",
+        "subject": "岸边手作市集",
+        "aliases": [],
+        "tags": [],
+        "fact": "现场设手作体验台",
+        "visual": "摊主在体验台上摆放彩绳",
+        "source": "活动确认单",
+        "operation": ""
+      },
+      {
+        "id": "P02",
+        "subject": "岸边手作市集",
+        "aliases": [],
+        "tags": [],
+        "fact": "活动页支持场次预约",
+        "visual": "提交后页面显示已预约，镜头保留场次标签",
+        "source": "合成活动报名页 EVT-04",
+        "operation": "进入活动页，选中下午场并点击预约"
+      }
+    ],
+    "material_sources": {
+      "M01": [
+        {
+          "line": 1,
+          "text": "岸边手作市集的《活动确认单》写着「现场设手作体验台」，可用画面是「摊主在体验台上摆放彩绳」。"
+        }
+      ],
+      "P02": [
+        {
+          "line": 2,
+          "text": "[P02] 主体：岸边手作市集｜事实：活动页支持场次预约｜操作：进入活动页，选中下午场并点击预约｜画面：提交后页面显示已预约，镜头保留场次标签｜来源：合成活动报名页 EVT-04"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "免预约",
+        "line": 1,
+        "text": "不要说「免预约」。"
+      },
+      {
+        "kind": "required",
+        "term": "活动页支持场次预约",
+        "line": 2,
+        "text": "必须说出「活动页支持场次预约」。"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": null,
+        "audience": "想周末结伴出门的人",
+        "desired_response": "看完能找到预约入口，并知道需要选择场次"
+      },
+      "context": {
+        "campaign": null
+      },
+      "creative": {
+        "format": "demo",
+        "format_policy": "locked",
+        "style": "轻快直接",
+        "requirements_policy": "locked",
+        "user_requirements": {
+          "setting": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+          "opening": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+          "hook_line": "想逛下午场？先看场次。"
+        }
+      },
+      "conversion": {
+        "action": null,
+        "destination": null
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "demo"
+        },
+        {
+          "field": "creative.user_requirements.setting",
+          "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。"
+        },
+        {
+          "field": "creative.user_requirements.opening",
+          "value": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。"
+        },
+        {
+          "field": "creative.user_requirements.hook_line",
+          "value": "想逛下午场？先看场次。"
+        },
+        {
+          "kind": "banned",
+          "term": "免预约",
+          "line": 1,
+          "text": "不要说「免预约」。"
+        },
+        {
+          "kind": "required",
+          "term": "活动页支持场次预约",
+          "line": 2,
+          "text": "必须说出「活动页支持场次预约」。"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "轻快直接"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "岸边手作市集周末预约的短片",
+          "origin": "brief_text",
+          "source": {
+            "value": "岸边手作市集周末预约的短片",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "想拍一条关于岸边手作市集周末预约的短片",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "想周末结伴出门的人",
+          "origin": "brief_text",
+          "source": {
+            "value": "想周末结伴出门的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "给想周末结伴出门的人",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "发抖音",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 2,
+            "text": "时长控制在0.5分钟内",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "轻快直接",
+          "origin": "brief_text",
+          "source": {
+            "value": "轻快直接",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "调性偏轻快直接",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "demo",
+          "origin": "brief_text",
+          "source": {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "内容形式：演示",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岸边手作市集",
+          "origin": "brief_text",
+          "source": {
+            "value": "岸边手作市集",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "产品是岸边手作市集",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "画幅：竖屏",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.desired_response",
+          "value": "看完能找到预约入口，并知道需要选择场次",
+          "origin": "brief_text",
+          "source": {
+            "value": "看完能找到预约入口，并知道需要选择场次",
+            "kind": "brief_text",
+            "line": 5,
+            "text": "希望观众看完能找到预约入口，并知道需要选择场次",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.setting",
+          "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+          "origin": "brief_text",
+          "source": {
+            "value": "市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+            "kind": "brief_text",
+            "line": 6,
+            "text": "拍摄场景：市集入口旁摆着场次指示牌，手机使用活动页演示账号。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.opening",
+          "value": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+          "origin": "brief_text",
+          "source": {
+            "value": "两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+            "kind": "brief_text",
+            "line": 7,
+            "text": "开场动作：两个人走到指示牌前，其中一人掏出手机，另一人指向下午场。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.hook_line",
+          "value": "想逛下午场？先看场次。",
+          "origin": "brief_text",
+          "source": {
+            "value": "想逛下午场？先看场次。",
+            "kind": "brief_text",
+            "line": 8,
+            "text": "开场台词：想逛下午场？先看场次。",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "visible_result",
+          "value": "页面显示已预约",
+          "origin": "brief_text",
+          "source": {
+            "value": "页面显示已预约",
+            "kind": "brief_text",
+            "line": 9,
+            "text": "可见结果：页面显示已预约",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "proof_id",
+          "value": "P02",
+          "origin": "brief_text",
+          "source": {
+            "value": "P02",
+            "kind": "brief_text",
+            "line": 10,
+            "text": "证据素材 ID：P02",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "cta",
+          "value": "点活动页，查看可约场次",
+          "origin": "brief_text",
+          "source": {
+            "value": "点活动页，查看可约场次",
+            "kind": "brief_text",
+            "line": 11,
+            "text": "收尾引导：点活动页，查看可约场次",
+            "source_file": "raw_brief.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  }
+}

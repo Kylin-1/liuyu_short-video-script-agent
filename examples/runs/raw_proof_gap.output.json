@@ -1,0 +1,949 @@
+{
+  "model_mode": "mock",
+  "status": "MATERIAL_REQUIRED",
+  "status_text": "待补充素材",
+  "detail": "缺少可拍的操作，或素材未显示 Brief 中要求的结果。",
+  "requested_fields": [
+    "操作画面及结果证据"
+  ],
+  "script": null,
+  "script_version": 0,
+  "revision_count": 0,
+  "checks": {
+    "version": 0,
+    "duration": null,
+    "rules_and_claims": null,
+    "grounding": null,
+    "review": null,
+    "creative_review": null
+  },
+  "creative_mode": "legacy",
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "D01",
+          "subject": "岩途随行杯",
+          "aliases": [],
+          "tags": [
+            "杯盖",
+            "锁扣"
+          ],
+          "fact": "杯盖带滑动锁扣",
+          "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+          "source": "合成商品样片 RT-07",
+          "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "audit": {
+    "run_id": "fa1f862d3b864d99b5f774d3a3c7b03f",
+    "elapsed_ms": 0.3,
+    "tool_calls": 1,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 2,
+    "max_steps": 20,
+    "input_sha256": "e75c413ed68c03052688bd759edbb74fc3792fb74e08f20f98a9758397f4954a",
+    "materials_sha256": "faba61dc5681c85c644bce1e0a5ed4a1b676f435641e46e6ff9493ef94cfa274",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "c1b64247007134753e6ea070dc82b6a58bfb26a2b4695f70b7efa639e2b667de"
+  },
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "llm_decisions": 0,
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "电梯到了，她却一把拽住了包",
+      "audience": "早上会把水杯塞进通勤包的人",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "生活短剧，前两秒有动作，台词像熟人说话",
+      "format": "sales_story",
+      "subject": "岩途随行杯",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "objective": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+      "setting": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+      "opening": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+      "hook_line": "你先别走！",
+      "visible_result": "杯口下方的纸巾无可见水滴",
+      "proof_id": "D01",
+      "cta": "想看这款锁扣，点商品卡",
+      "turn": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+      "turn_line": "等一下，杯子还没锁。",
+      "resolution": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "电梯到了，她却一把拽住了包",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主题：电梯到了，她却一把拽住了包",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "电梯到了，她却一把拽住了包",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主题：电梯到了，她却一把拽住了包",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "早上会把水杯塞进通勤包的人",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "受众：早上会把水杯塞进通勤包的人",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "早上会把水杯塞进通勤包的人",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "受众：早上会把水杯塞进通勤包的人",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "发抖音",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "发抖音",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "最多30秒",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "最多30秒",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "生活短剧，前两秒有动作，台词像熟人说话",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "风格：生活短剧，前两秒有动作，台词像熟人说话",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "生活短剧，前两秒有动作，台词像熟人说话",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：生活短剧，前两秒有动作，台词像熟人说话",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "sales_story",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：剧情带货",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "sales_story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情带货",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岩途随行杯",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：岩途随行杯",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "竖屏",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "竖屏",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "objective": {
+        "selected": {
+          "value": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+          "kind": "brief_text",
+          "line": 4,
+          "text": "希望观众先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "希望观众先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "setting": {
+        "selected": {
+          "value": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+          "kind": "brief_text",
+          "line": 5,
+          "text": "拍摄场景：玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+            "kind": "brief_text",
+            "line": 5,
+            "text": "拍摄场景：玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "opening": {
+        "selected": {
+          "value": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+          "kind": "brief_text",
+          "line": 6,
+          "text": "开场动作：同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+            "kind": "brief_text",
+            "line": 6,
+            "text": "开场动作：同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "hook_line": {
+        "selected": {
+          "value": "你先别走！",
+          "kind": "brief_text",
+          "line": 7,
+          "text": "开场台词：你先别走！",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "你先别走！",
+            "kind": "brief_text",
+            "line": 7,
+            "text": "开场台词：你先别走！",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "visible_result": {
+        "selected": {
+          "value": "杯口下方的纸巾无可见水滴",
+          "kind": "brief_text",
+          "line": 10,
+          "text": "可见结果：杯口下方的纸巾无可见水滴",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "杯口下方的纸巾无可见水滴",
+            "kind": "brief_text",
+            "line": 10,
+            "text": "可见结果：杯口下方的纸巾无可见水滴",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "proof_id": {
+        "selected": {
+          "value": "D01",
+          "kind": "brief_text",
+          "line": 11,
+          "text": "证据素材 ID：D01",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "D01",
+            "kind": "brief_text",
+            "line": 11,
+            "text": "证据素材 ID：D01",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "cta": {
+        "selected": {
+          "value": "想看这款锁扣，点商品卡",
+          "kind": "brief_text",
+          "line": 13,
+          "text": "收尾引导：想看这款锁扣，点商品卡",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "想看这款锁扣，点商品卡",
+            "kind": "brief_text",
+            "line": 13,
+            "text": "收尾引导：想看这款锁扣，点商品卡",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "turn": {
+        "selected": {
+          "value": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+          "kind": "brief_text",
+          "line": 8,
+          "text": "转折动作：电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+            "kind": "brief_text",
+            "line": 8,
+            "text": "转折动作：电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "turn_line": {
+        "selected": {
+          "value": "等一下，杯子还没锁。",
+          "kind": "brief_text",
+          "line": 9,
+          "text": "转折台词：等一下，杯子还没锁。",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "等一下，杯子还没锁。",
+            "kind": "brief_text",
+            "line": 9,
+            "text": "转折台词：等一下，杯子还没锁。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "resolution": {
+        "selected": {
+          "value": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+          "kind": "brief_text",
+          "line": 12,
+          "text": "人物结局：她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+          "source_file": "raw_proof_gap.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+            "kind": "brief_text",
+            "line": 12,
+            "text": "人物结局：她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [
+      {
+        "kind": "brief_text",
+        "line": 14,
+        "text": "这条只讲锁扣结构",
+        "source_file": "raw_proof_gap.txt",
+        "section": "brief_text"
+      },
+      {
+        "kind": "brief_text",
+        "line": 14,
+        "text": "倒置、防漏或保温测试另拍",
+        "source_file": "raw_proof_gap.txt",
+        "section": "brief_text"
+      }
+    ],
+    "materials": [
+      {
+        "id": "D01",
+        "subject": "岩途随行杯",
+        "aliases": [],
+        "tags": [
+          "杯盖",
+          "锁扣"
+        ],
+        "fact": "杯盖带滑动锁扣",
+        "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+        "source": "合成商品样片 RT-07",
+        "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+      },
+      {
+        "id": "D02",
+        "subject": "岩途随行杯",
+        "aliases": [],
+        "tags": [
+          "杯身"
+        ],
+        "fact": "杯身有杯量刻度",
+        "visual": "刻度转到镜头正前方",
+        "source": "合成商品样片 RT-08",
+        "operation": "转动杯身"
+      },
+      {
+        "id": "D03",
+        "subject": "岩途随行杯运动版",
+        "aliases": [],
+        "tags": [
+          "倒置"
+        ],
+        "fact": "该运动版样杯在这次倒置拍摄中未见滴漏",
+        "visual": "杯口下方的纸巾无可见水滴",
+        "source": "合成运动版样片 RT-S03",
+        "operation": "将运动版样杯倒置在纸巾上方"
+      }
+    ],
+    "material_sources": {
+      "D01": [
+        {
+          "line": 1,
+          "text": "[D01] 主体：岩途随行杯｜事实：杯盖带滑动锁扣｜操作：拇指沿杯盖凹槽推动锁扣，镜头跟住手指｜画面：拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见｜来源：合成商品样片 RT-07｜标签：杯盖、锁扣"
+        }
+      ],
+      "D02": [
+        {
+          "line": 2,
+          "text": "[D02] 主体：岩途随行杯｜事实：杯身有杯量刻度｜操作：转动杯身｜画面：刻度转到镜头正前方｜来源：合成商品样片 RT-08｜标签：杯身"
+        }
+      ],
+      "D03": [
+        {
+          "line": 3,
+          "text": "[D03] 主体：岩途随行杯运动版｜事实：该运动版样杯在这次倒置拍摄中未见滴漏｜操作：将运动版样杯倒置在纸巾上方｜画面：杯口下方的纸巾无可见水滴｜来源：合成运动版样片 RT-S03｜标签：倒置"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "绝对防漏",
+        "line": 1,
+        "text": "不要说「绝对防漏」。"
+      },
+      {
+        "kind": "banned",
+        "term": "永久保温",
+        "line": 2,
+        "text": "禁用词：永久保温、全网最低价"
+      },
+      {
+        "kind": "banned",
+        "term": "全网最低价",
+        "line": 2,
+        "text": "禁用词：永久保温、全网最低价"
+      },
+      {
+        "kind": "required",
+        "term": "杯盖带滑动锁扣",
+        "line": 3,
+        "text": "必须说出「杯盖带滑动锁扣」。"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": null,
+        "audience": "早上会把水杯塞进通勤包的人",
+        "desired_response": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了"
+      },
+      "context": {
+        "campaign": null
+      },
+      "creative": {
+        "format": "sales_story",
+        "format_policy": "locked",
+        "style": "生活短剧，前两秒有动作，台词像熟人说话",
+        "requirements_policy": "locked",
+        "user_requirements": {
+          "setting": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+          "opening": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+          "hook_line": "你先别走！",
+          "turn": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+          "turn_line": "等一下，杯子还没锁。",
+          "resolution": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。"
+        }
+      },
+      "conversion": {
+        "action": null,
+        "destination": null
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "sales_story"
+        },
+        {
+          "field": "creative.user_requirements.setting",
+          "value": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。"
+        },
+        {
+          "field": "creative.user_requirements.opening",
+          "value": "同伴拎起通勤包就要出门，她伸手一把拽住包带。"
+        },
+        {
+          "field": "creative.user_requirements.hook_line",
+          "value": "你先别走！"
+        },
+        {
+          "field": "creative.user_requirements.turn",
+          "value": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。"
+        },
+        {
+          "field": "creative.user_requirements.turn_line",
+          "value": "等一下，杯子还没锁。"
+        },
+        {
+          "field": "creative.user_requirements.resolution",
+          "value": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。"
+        },
+        {
+          "kind": "banned",
+          "term": "绝对防漏",
+          "line": 1,
+          "text": "不要说「绝对防漏」。"
+        },
+        {
+          "kind": "banned",
+          "term": "永久保温",
+          "line": 2,
+          "text": "禁用词：永久保温、全网最低价"
+        },
+        {
+          "kind": "banned",
+          "term": "全网最低价",
+          "line": 2,
+          "text": "禁用词：永久保温、全网最低价"
+        },
+        {
+          "kind": "required",
+          "term": "杯盖带滑动锁扣",
+          "line": 3,
+          "text": "必须说出「杯盖带滑动锁扣」。"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "生活短剧，前两秒有动作，台词像熟人说话"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "电梯到了，她却一把拽住了包",
+          "origin": "brief_text",
+          "source": {
+            "value": "电梯到了，她却一把拽住了包",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主题：电梯到了，她却一把拽住了包",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "早上会把水杯塞进通勤包的人",
+          "origin": "brief_text",
+          "source": {
+            "value": "早上会把水杯塞进通勤包的人",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "受众：早上会把水杯塞进通勤包的人",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "发抖音",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "最多30秒",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "生活短剧，前两秒有动作，台词像熟人说话",
+          "origin": "brief_text",
+          "source": {
+            "value": "生活短剧，前两秒有动作，台词像熟人说话",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：生活短剧，前两秒有动作，台词像熟人说话",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "sales_story",
+          "origin": "brief_text",
+          "source": {
+            "value": "sales_story",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：剧情带货",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岩途随行杯",
+          "origin": "brief_text",
+          "source": {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "竖屏",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.desired_response",
+          "value": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+          "origin": "brief_text",
+          "source": {
+            "value": "先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+            "kind": "brief_text",
+            "line": 4,
+            "text": "希望观众先想知道她为什么拦人，再看清她赶时间时怎么确认杯盖锁好了",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.setting",
+          "value": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+          "origin": "brief_text",
+          "source": {
+            "value": "玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+            "kind": "brief_text",
+            "line": 5,
+            "text": "拍摄场景：玄关长凳正对电梯厅，长凳上放着一只岩途随行杯。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.opening",
+          "value": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+          "origin": "brief_text",
+          "source": {
+            "value": "同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+            "kind": "brief_text",
+            "line": 6,
+            "text": "开场动作：同伴拎起通勤包就要出门，她伸手一把拽住包带。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.hook_line",
+          "value": "你先别走！",
+          "origin": "brief_text",
+          "source": {
+            "value": "你先别走！",
+            "kind": "brief_text",
+            "line": 7,
+            "text": "开场台词：你先别走！",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "visible_result",
+          "value": "杯口下方的纸巾无可见水滴",
+          "origin": "brief_text",
+          "source": {
+            "value": "杯口下方的纸巾无可见水滴",
+            "kind": "brief_text",
+            "line": 10,
+            "text": "可见结果：杯口下方的纸巾无可见水滴",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "proof_id",
+          "value": "D01",
+          "origin": "brief_text",
+          "source": {
+            "value": "D01",
+            "kind": "brief_text",
+            "line": 11,
+            "text": "证据素材 ID：D01",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "cta",
+          "value": "想看这款锁扣，点商品卡",
+          "origin": "brief_text",
+          "source": {
+            "value": "想看这款锁扣，点商品卡",
+            "kind": "brief_text",
+            "line": 13,
+            "text": "收尾引导：想看这款锁扣，点商品卡",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.turn",
+          "value": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+          "origin": "brief_text",
+          "source": {
+            "value": "电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+            "kind": "brief_text",
+            "line": 8,
+            "text": "转折动作：电梯到站响了一声，同伴进电梯按住开门键。她回头看到杯子还在长凳上，杯盖的锁扣没合。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.turn_line",
+          "value": "等一下，杯子还没锁。",
+          "origin": "brief_text",
+          "source": {
+            "value": "等一下，杯子还没锁。",
+            "kind": "brief_text",
+            "line": 9,
+            "text": "转折台词：等一下，杯子还没锁。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.user_requirements.resolution",
+          "value": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+          "origin": "brief_text",
+          "source": {
+            "value": "她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+            "kind": "brief_text",
+            "line": 12,
+            "text": "人物结局：她把杯子插进包侧袋，接过包跨进电梯。同伴这才松开按着的开门键。",
+            "source_file": "raw_proof_gap.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  }
+}

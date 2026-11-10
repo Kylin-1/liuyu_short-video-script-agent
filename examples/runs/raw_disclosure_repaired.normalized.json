@@ -1,0 +1,422 @@
+{
+  "status": "READY",
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "云栖咖啡周末到店领券",
+      "audience": "路过门店的商圈访客",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "轻快",
+      "format": "demo",
+      "subject": "云栖咖啡",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "云栖咖啡周末到店领券",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：云栖咖啡周末到店领券",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "云栖咖啡周末到店领券",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：云栖咖啡周末到店领券",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "路过门店的商圈访客",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：路过门店的商圈访客",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "路过门店的商圈访客",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：路过门店的商圈访客",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：抖音",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "时长：30秒",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "轻快",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "风格：轻快",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "轻快",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "风格：轻快",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "demo",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：演示",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：演示",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "云栖咖啡",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：云栖咖啡",
+          "source_file": "raw_disclosure_repaired.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "云栖咖啡",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：云栖咖啡",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "kind": "default",
+          "value": "9:16"
+        }
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [],
+    "materials": [
+      {
+        "id": "P01",
+        "subject": "云栖咖啡",
+        "aliases": [],
+        "tags": [],
+        "fact": "到店可出示小程序券码",
+        "visual": "顾客向收银员亮出示例券码",
+        "source": "合成到店核销须知",
+        "operation": ""
+      },
+      {
+        "id": "R01",
+        "subject": "云栖咖啡",
+        "aliases": [],
+        "tags": [],
+        "fact": "仅限周末到店使用",
+        "visual": "活动规则页显示完整使用条件",
+        "source": "合成活动适用条件",
+        "operation": ""
+      }
+    ],
+    "material_sources": {
+      "P01": [
+        {
+          "line": 1,
+          "text": "[P01] 主体：云栖咖啡｜事实：到店可出示小程序券码｜画面：顾客向收银员亮出示例券码｜来源：合成到店核销须知"
+        }
+      ],
+      "R01": [
+        {
+          "line": 2,
+          "text": "[R01] 主体：云栖咖啡｜事实：仅限周末到店使用｜画面：活动规则页显示完整使用条件｜来源：合成活动适用条件"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "required",
+        "term": "仅限周末到店使用",
+        "line": 1,
+        "text": "必须出现的词：仅限周末到店使用"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": null,
+        "audience": "路过门店的商圈访客",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": null
+      },
+      "creative": {
+        "format": "demo",
+        "format_policy": "locked",
+        "style": "轻快",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": null,
+        "destination": null
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "demo"
+        },
+        {
+          "kind": "required",
+          "term": "仅限周末到店使用",
+          "line": 1,
+          "text": "必须出现的词：仅限周末到店使用"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "轻快"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "云栖咖啡周末到店领券",
+          "origin": "brief_text",
+          "source": {
+            "value": "云栖咖啡周末到店领券",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：云栖咖啡周末到店领券",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "路过门店的商圈访客",
+          "origin": "brief_text",
+          "source": {
+            "value": "路过门店的商圈访客",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：路过门店的商圈访客",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "轻快",
+          "origin": "brief_text",
+          "source": {
+            "value": "轻快",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "风格：轻快",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "demo",
+          "origin": "brief_text",
+          "source": {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：演示",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "云栖咖啡",
+          "origin": "brief_text",
+          "source": {
+            "value": "云栖咖啡",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：云栖咖啡",
+            "source_file": "raw_disclosure_repaired.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": "9:16"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  },
+  "model_mode": "mock"
+}

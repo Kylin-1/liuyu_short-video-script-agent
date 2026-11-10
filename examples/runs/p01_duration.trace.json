@@ -1,0 +1,1923 @@
+{
+  "model_mode": "mock",
+  "status": "COMPLETED",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 2,
+    "duration": {
+      "passed": true,
+      "target_seconds": 15,
+      "total_seconds": 14,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 3,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 3,
+          "reading_seconds": 0,
+          "estimated_seconds": 3
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 4,
+          "minimum_visual_seconds": 3,
+          "spoken_seconds": 0,
+          "reading_seconds": 0,
+          "estimated_seconds": 4
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 5,
+          "minimum_visual_seconds": 4,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 5
+        },
+        {
+          "scene_id": "S04",
+          "planned_seconds": 2,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 2
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": true,
+      "issues": [],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "剪影工作台｜细节演示",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "先认准字幕这一处。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "打开剪辑界面的字幕面板",
+          "status": "VERIFIED",
+          "basis": "material.operation",
+          "material_ids": [
+            "P01"
+          ],
+          "quotes": [
+            "打开剪辑界面的字幕面板"
+          ]
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "同一段画面底部出现一行字幕",
+          "status": "VERIFIED",
+          "basis": "material.visual",
+          "material_ids": [
+            "P01"
+          ],
+          "quotes": [
+            "同一段画面底部出现一行字幕"
+          ]
+        },
+        {
+          "scene_id": "S03",
+          "field": "voiceover",
+          "text": "支持字幕。",
+          "status": "VERIFIED",
+          "basis": "material.fact",
+          "material_ids": [
+            "P01"
+          ],
+          "quotes": [
+            "支持字幕"
+          ]
+        },
+        {
+          "scene_id": "S04",
+          "field": "action",
+          "text": "回到开场构图，手再次指向刚才看的位置。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S04",
+          "field": "voiceover",
+          "text": "这一次，看清了吗？",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": {
+      "passed": true,
+      "issues": [],
+      "scope": "Mock 核对素材与兑现镜头",
+      "version": 2
+    },
+    "creative_review": {
+      "passed": true,
+      "issues": [],
+      "scope": "Mock 创作诊断，仅识别泛化开场、显式动机缺口、未兑现收尾和重复口播。",
+      "human_review_required": true,
+      "human_review_items": [
+        "开场是否值得继续看",
+        "人物动机是否自然",
+        "商品介入是否生硬",
+        "结尾是否兑现",
+        "实际可拍性"
+      ],
+      "version": 2
+    }
+  },
+  "audit": {
+    "run_id": "c7dec8434ed44d519bede14cc27c8016",
+    "elapsed_ms": 2.37,
+    "tool_calls": 5,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 11,
+    "max_steps": 20,
+    "input_sha256": "ebf89af76bfc2be37688f4f0a871938ca4ed9c7056a1bdabee55bd1c5fd65a4b",
+    "materials_sha256": "0650dbece0626296ea7a9a16aa0043719ad6d72c6345bcb376d6e16358207b8b",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "adab2449783672dec201c84ca7c9fc899dbc4f55536b4c697fba57c92bc6cd13"
+  },
+  "creative_mode": "planned",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [
+      {
+        "id": "C01",
+        "approach": "问题引导",
+        "audience_insight": "面向初次剪口播的创作者，假设他们会关心「看清视频里说的话」；该洞察尚未经观众验证。",
+        "protagonist_goal": "看清视频里说的话",
+        "obstacle": "人物错过台词，需要把注意力转到字幕",
+        "product_role": "仅通过素材 P01 呈现「支持字幕」",
+        "payoff": "朋友点点头，主角松开进度条，两人继续往下看。",
+        "cta_reason": "先完成观察或人物行动，不添加未授权转化入口",
+        "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。采用「清楚直接」表达，避免夸大商品能力。",
+        "focus": "字幕",
+        "setting": "桌前，两人看着同一块屏幕",
+        "opening": "镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+        "hook_line": "字幕在哪里？跟着这个画面看。",
+        "turn": "朋友把手移到屏幕边缘，两人的视线跟向可用素材里的字幕。",
+        "turn_line": "先别重播，看这里。",
+        "resolution": "朋友点点头，主角松开进度条，两人继续往下看。",
+        "material_ids": [
+          "P01"
+        ],
+        "assumptions": [
+          "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+        ],
+        "field_origins": [
+          [
+            "setting",
+            "mock_proposal"
+          ],
+          [
+            "opening",
+            "mock_proposal"
+          ],
+          [
+            "hook_line",
+            "mock_proposal"
+          ],
+          [
+            "turn",
+            "mock_proposal"
+          ],
+          [
+            "turn_line",
+            "mock_proposal"
+          ],
+          [
+            "resolution",
+            "mock_proposal"
+          ]
+        ]
+      },
+      {
+        "id": "C02",
+        "approach": "细节观察",
+        "audience_insight": "面向初次剪口播的创作者，假设他们会关心「看清视频里说的话」；该洞察尚未经观众验证。",
+        "protagonist_goal": "看清视频里说的话",
+        "obstacle": "人物错过台词，需要把注意力转到字幕",
+        "product_role": "仅通过素材 P01 呈现「支持字幕」",
+        "payoff": "朋友点点头，主角松开进度条，两人继续往下看。",
+        "cta_reason": "先完成观察或人物行动，不添加未授权转化入口",
+        "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。采用「清楚直接」表达，避免夸大商品能力。",
+        "focus": "字幕",
+        "setting": "桌前，两人看着同一块屏幕",
+        "opening": "镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+        "hook_line": "先认准字幕这一处。",
+        "turn": "主角停住动作，顺着同伴的手势看向镜头中央。",
+        "turn_line": "先看字幕，再往下。",
+        "resolution": "朋友点点头，主角松开进度条，两人继续往下看。",
+        "material_ids": [
+          "P01"
+        ],
+        "assumptions": [
+          "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+        ],
+        "field_origins": [
+          [
+            "setting",
+            "mock_proposal"
+          ],
+          [
+            "opening",
+            "mock_proposal"
+          ],
+          [
+            "hook_line",
+            "mock_proposal"
+          ],
+          [
+            "turn",
+            "mock_proposal"
+          ],
+          [
+            "turn_line",
+            "mock_proposal"
+          ],
+          [
+            "resolution",
+            "mock_proposal"
+          ]
+        ]
+      }
+    ],
+    "selected_plan_id": "C02",
+    "selection_reason": "选择较短的开场方案，为事实镜头和收尾保留预算；最终以估时工具为准。",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "P01",
+          "subject": "剪影工作台",
+          "aliases": [],
+          "tags": [],
+          "fact": "支持字幕",
+          "visual": "同一段画面底部出现一行字幕",
+          "source": "合成字幕录屏 P01",
+          "operation": "打开剪辑界面的字幕面板"
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": ""
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "剪影工作台",
+            "query": ""
+          },
+          "result": [
+            {
+              "id": "P01",
+              "subject": "剪影工作台",
+              "aliases": [],
+              "tags": [],
+              "fact": "支持字幕",
+              "visual": "同一段画面底部出现一行字幕",
+              "source": "合成字幕录屏 P01",
+              "operation": "打开剪辑界面的字幕面板"
+            }
+          ]
+        }
+      ],
+      "role": "道具",
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "PLAN",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "PLAN",
+      "reason": "先提出两个有事实边界的创意方向。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "plans": [
+          {
+            "id": "C01",
+            "approach": "问题引导",
+            "audience_insight": "面向初次剪口播的创作者，假设他们会关心「看清视频里说的话」；该洞察尚未经观众验证。",
+            "protagonist_goal": "看清视频里说的话",
+            "obstacle": "人物错过台词，需要把注意力转到字幕",
+            "product_role": "仅通过素材 P01 呈现「支持字幕」",
+            "payoff": "朋友点点头，主角松开进度条，两人继续往下看。",
+            "cta_reason": "先完成观察或人物行动，不添加未授权转化入口",
+            "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。采用「清楚直接」表达，避免夸大商品能力。",
+            "focus": "字幕",
+            "setting": "桌前，两人看着同一块屏幕",
+            "opening": "镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+            "hook_line": "字幕在哪里？跟着这个画面看。",
+            "turn": "朋友把手移到屏幕边缘，两人的视线跟向可用素材里的字幕。",
+            "turn_line": "先别重播，看这里。",
+            "resolution": "朋友点点头，主角松开进度条，两人继续往下看。",
+            "material_ids": [
+              "P01"
+            ],
+            "assumptions": [
+              "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+            ],
+            "field_origins": [
+              [
+                "setting",
+                "mock_proposal"
+              ],
+              [
+                "opening",
+                "mock_proposal"
+              ],
+              [
+                "hook_line",
+                "mock_proposal"
+              ],
+              [
+                "turn",
+                "mock_proposal"
+              ],
+              [
+                "turn_line",
+                "mock_proposal"
+              ],
+              [
+                "resolution",
+                "mock_proposal"
+              ]
+            ]
+          },
+          {
+            "id": "C02",
+            "approach": "细节观察",
+            "audience_insight": "面向初次剪口播的创作者，假设他们会关心「看清视频里说的话」；该洞察尚未经观众验证。",
+            "protagonist_goal": "看清视频里说的话",
+            "obstacle": "人物错过台词，需要把注意力转到字幕",
+            "product_role": "仅通过素材 P01 呈现「支持字幕」",
+            "payoff": "朋友点点头，主角松开进度条，两人继续往下看。",
+            "cta_reason": "先完成观察或人物行动，不添加未授权转化入口",
+            "presentation": "按 9:16 构图，为抖音制作；平台差异待实投验证。采用「清楚直接」表达，避免夸大商品能力。",
+            "focus": "字幕",
+            "setting": "桌前，两人看着同一块屏幕",
+            "opening": "镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+            "hook_line": "先认准字幕这一处。",
+            "turn": "主角停住动作，顺着同伴的手势看向镜头中央。",
+            "turn_line": "先看字幕，再往下。",
+            "resolution": "朋友点点头，主角松开进度条，两人继续往下看。",
+            "material_ids": [
+              "P01"
+            ],
+            "assumptions": [
+              "人物、动机、场景和对白为创作设定，不代表真实用户见证。"
+            ],
+            "field_origins": [
+              [
+                "setting",
+                "mock_proposal"
+              ],
+              [
+                "opening",
+                "mock_proposal"
+              ],
+              [
+                "hook_line",
+                "mock_proposal"
+              ],
+              [
+                "turn",
+                "mock_proposal"
+              ],
+              [
+                "turn_line",
+                "mock_proposal"
+              ],
+              [
+                "resolution",
+                "mock_proposal"
+              ]
+            ]
+          }
+        ],
+        "evidence_pack": {
+          "facts": [
+            {
+              "id": "P01",
+              "subject": "剪影工作台",
+              "aliases": [],
+              "tags": [],
+              "fact": "支持字幕",
+              "visual": "同一段画面底部出现一行字幕",
+              "source": "合成字幕录屏 P01",
+              "operation": "打开剪辑界面的字幕面板"
+            }
+          ],
+          "boundaries": [
+            "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+            "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+            "虚构人物和对白不构成产品测试证据。"
+          ]
+        }
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "SELECT_CONCEPT",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "SELECT_CONCEPT",
+      "reason": "选择较短的开场方案，为事实镜头和收尾保留预算；最终以估时工具为准。",
+      "args": {
+        "plan_id": "C02"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "制片人",
+      "observation": {
+        "selected_plan_id": "C02"
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "WRITE",
+      "model_calls": []
+    },
+    {
+      "step": 4,
+      "action": "WRITE",
+      "reason": "按可用依据起草中文文案。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "剪影工作台｜细节演示",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "hook",
+            "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+            "voiceover": "先认准字幕这一处。",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "operation",
+            "action": "打开剪辑界面的字幕面板",
+            "voiceover": "",
+            "subtitle": "",
+            "material_id": "P01"
+          },
+          {
+            "id": "S03",
+            "purpose": "payoff",
+            "action": "同一段画面底部出现一行字幕",
+            "voiceover": "支持字幕。",
+            "subtitle": "",
+            "material_id": "P01"
+          },
+          {
+            "id": "S04",
+            "purpose": "cta",
+            "action": "回到开场构图，手再次指向刚才看的位置。",
+            "voiceover": "这一次，看清了吗？",
+            "subtitle": "",
+            "material_id": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 5,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": false
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "hook",
+              "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+              "voiceover": "先认准字幕这一处。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "近景，动作落在画面中心",
+            "sound": "先留现场声，再进开场台词",
+            "transition": "在动作最清楚处切入"
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "operation",
+              "action": "打开剪辑界面的字幕面板",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 8,
+            "minimum_visual_seconds": 3,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "操作特写，保留手势或光标的完整路径",
+            "sound": "保留同期声，静音录屏保持无声",
+            "transition": "在操作开始时切入，保留触发瞬间"
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "payoff",
+              "action": "同一段画面底部出现一行字幕",
+              "voiceover": "支持字幕。",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 9,
+            "minimum_visual_seconds": 4,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "结果特写，关键细节留在安全区",
+            "sound": "结果出现后再入口播，保留短停顿",
+            "transition": "延续上镜方向，让结果自然出现"
+          },
+          {
+            "beat": {
+              "id": "S04",
+              "purpose": "cta",
+              "action": "回到开场构图，手再次指向刚才看的位置。",
+              "voiceover": "这一次，看清了吗？",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 4,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+            "sound": "同期声渐弱",
+            "transition": "结果定格后淡入字幕"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 6,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 15,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+                  "voiceover": "先认准字幕这一处。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "打开剪辑界面的字幕面板",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "同一段画面底部出现一行字幕",
+                  "voiceover": "支持字幕。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "回到开场构图，手再次指向刚才看的位置。",
+                  "voiceover": "这一次，看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ]
+          },
+          "result": {
+            "passed": false,
+            "target_seconds": 15,
+            "total_seconds": 26,
+            "over_seconds": 11,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 5
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 8
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 9
+              },
+              {
+                "scene_id": "S04",
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 4
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "剪影工作台｜细节演示",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+                  "voiceover": "先认准字幕这一处。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "打开剪辑界面的字幕面板",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "同一段画面底部出现一行字幕",
+                  "voiceover": "支持字幕。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "回到开场构图，手再次指向刚才看的位置。",
+                  "voiceover": "这一次，看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ],
+            "material_ids": [
+              "P01"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买",
+              "效率提升80%",
+              "一键爆款"
+            ],
+            "required_terms": [
+              "支持字幕"
+            ]
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": true,
+          "issues": [],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "剪影工作台｜细节演示",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "先认准字幕这一处。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "打开剪辑界面的字幕面板",
+              "status": "VERIFIED",
+              "basis": "material.operation",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "打开剪辑界面的字幕面板"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "同一段画面底部出现一行字幕",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "同一段画面底部出现一行字幕"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "voiceover",
+              "text": "支持字幕。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "支持字幕"
+              ]
+            },
+            {
+              "scene_id": "S04",
+              "field": "action",
+              "text": "回到开场构图，手再次指向刚才看的位置。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S04",
+              "field": "voiceover",
+              "text": "这一次，看清了吗？",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "COMPACT_SCENES",
+      "model_calls": []
+    },
+    {
+      "step": 7,
+      "action": "COMPACT_SCENES",
+      "reason": "保留开场、操作和结果，缩短镜头停留后重新估时。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "hook",
+              "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+              "voiceover": "先认准字幕这一处。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 3,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "近景，动作落在画面中心",
+            "sound": "先留现场声，再进开场台词",
+            "transition": "在动作最清楚处切入"
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "operation",
+              "action": "打开剪辑界面的字幕面板",
+              "voiceover": "",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 4,
+            "minimum_visual_seconds": 3,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "操作特写，保留手势或光标的完整路径",
+            "sound": "保留同期声，静音录屏保持无声",
+            "transition": "在操作开始时切入，保留触发瞬间"
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "payoff",
+              "action": "同一段画面底部出现一行字幕",
+              "voiceover": "支持字幕。",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 5,
+            "minimum_visual_seconds": 4,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "结果特写，关键细节留在安全区",
+            "sound": "结果出现后再入口播，保留短停顿",
+            "transition": "延续上镜方向，让结果自然出现"
+          },
+          {
+            "beat": {
+              "id": "S04",
+              "purpose": "cta",
+              "action": "回到开场构图，手再次指向刚才看的位置。",
+              "voiceover": "这一次，看清了吗？",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 2,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+            "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+            "sound": "同期声渐弱",
+            "transition": "结果定格后淡入字幕"
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 8,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 15,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+                  "voiceover": "先认准字幕这一处。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "打开剪辑界面的字幕面板",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "同一段画面底部出现一行字幕",
+                  "voiceover": "支持字幕。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "回到开场构图，手再次指向刚才看的位置。",
+                  "voiceover": "这一次，看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ]
+          },
+          "result": {
+            "passed": true,
+            "target_seconds": 15,
+            "total_seconds": 14,
+            "over_seconds": 0,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 3,
+                "reading_seconds": 0,
+                "estimated_seconds": 3
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 3,
+                "spoken_seconds": 0,
+                "reading_seconds": 0,
+                "estimated_seconds": 4
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 5
+              },
+              {
+                "scene_id": "S04",
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 2
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "剪影工作台｜细节演示",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "hook",
+                  "action": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+                  "voiceover": "先认准字幕这一处。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 3,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "近景，动作落在画面中心",
+                "sound": "先留现场声，再进开场台词",
+                "transition": "在动作最清楚处切入"
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "operation",
+                  "action": "打开剪辑界面的字幕面板",
+                  "voiceover": "",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 4,
+                "minimum_visual_seconds": 3,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "操作特写，保留手势或光标的完整路径",
+                "sound": "保留同期声，静音录屏保持无声",
+                "transition": "在操作开始时切入，保留触发瞬间"
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "payoff",
+                  "action": "同一段画面底部出现一行字幕",
+                  "voiceover": "支持字幕。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 5,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "结果特写，关键细节留在安全区",
+                "sound": "结果出现后再入口播，保留短停顿",
+                "transition": "延续上镜方向，让结果自然出现"
+              },
+              {
+                "beat": {
+                  "id": "S04",
+                  "purpose": "cta",
+                  "action": "回到开场构图，手再次指向刚才看的位置。",
+                  "voiceover": "这一次，看清了吗？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持主体一致（剪影工作台），证据镜头沿用同一次操作的原顺序",
+                "framing": "沿用结果镜头，文字避开原字幕和操作结果",
+                "sound": "同期声渐弱",
+                "transition": "结果定格后淡入字幕"
+              }
+            ],
+            "material_ids": [
+              "P01"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买",
+              "效率提升80%",
+              "一键爆款"
+            ],
+            "required_terms": [
+              "支持字幕"
+            ]
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": true,
+          "issues": [],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "剪影工作台｜细节演示",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "桌前，两人看着同一块屏幕。镜头对准剪影工作台，从素材里的关键位置开始，手指沿画面边缘指示。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "先认准字幕这一处。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "打开剪辑界面的字幕面板",
+              "status": "VERIFIED",
+              "basis": "material.operation",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "打开剪辑界面的字幕面板"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "同一段画面底部出现一行字幕",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "同一段画面底部出现一行字幕"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "voiceover",
+              "text": "支持字幕。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "支持字幕"
+              ]
+            },
+            {
+              "scene_id": "S04",
+              "field": "action",
+              "text": "回到开场构图，手再次指向刚才看的位置。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S04",
+              "field": "voiceover",
+              "text": "这一次，看清了吗？",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "REVIEW",
+      "model_calls": []
+    },
+    {
+      "step": 9,
+      "action": "REVIEW",
+      "reason": "时长和规则通过，核对事实、画面与镜头承接。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [],
+      "role": "审核",
+      "observation": {
+        "passed": true,
+        "issues": [],
+        "scope": "Mock 核对素材与兑现镜头",
+        "version": 2
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "CRITIQUE",
+      "model_calls": []
+    },
+    {
+      "step": 10,
+      "action": "CRITIQUE",
+      "reason": "检查开场期待、人物动机、收尾兑现和重复解释，给出逐镜修改目标。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [],
+      "role": "创作审核",
+      "observation": {
+        "passed": true,
+        "issues": [],
+        "scope": "Mock 创作诊断，仅识别泛化开场、显式动机缺口、未兑现收尾和重复口播。",
+        "human_review_required": true,
+        "human_review_items": [
+          "开场是否值得继续看",
+          "人物动机是否自然",
+          "商品介入是否生硬",
+          "结尾是否兑现",
+          "实际可拍性"
+        ],
+        "version": 2
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "DELIVER",
+      "model_calls": []
+    },
+    {
+      "step": 11,
+      "action": "DELIVER",
+      "reason": "当前版本的硬性检查与适用的创作诊断均通过。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ],
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "字幕功能推广",
+      "audience": "初次剪口播的创作者",
+      "platform": "抖音",
+      "target_seconds": 15,
+      "style": "清楚直接",
+      "format": "demo",
+      "subject": "剪影工作台",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "goal": "product_understanding",
+      "campaign": "功能教学",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "字幕功能推广",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：字幕功能推广",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "字幕功能推广",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：字幕功能推广",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "初次剪口播的创作者",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：初次剪口播的创作者",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "初次剪口播的创作者",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：初次剪口播的创作者",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：抖音",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 15,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "时长：15秒",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 15,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：15秒",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "清楚直接",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "风格：清楚直接",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "清楚直接",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：清楚直接",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "demo",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：功能演示",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：功能演示",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "剪影工作台",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：剪影工作台",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "剪影工作台",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：剪影工作台",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "画幅：竖屏",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "goal": {
+        "selected": {
+          "value": "product_understanding",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主目标：促进商品理解",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "product_understanding",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进商品理解",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "campaign": {
+        "selected": {
+          "value": "功能教学",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "业务场景：功能教学",
+          "source_file": "campaign_p01.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "功能教学",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：功能教学",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [],
+    "materials": [
+      {
+        "id": "P01",
+        "subject": "剪影工作台",
+        "aliases": [],
+        "tags": [],
+        "fact": "支持字幕",
+        "visual": "同一段画面底部出现一行字幕",
+        "source": "合成字幕录屏 P01",
+        "operation": "打开剪辑界面的字幕面板"
+      }
+    ],
+    "material_sources": {
+      "P01": [
+        {
+          "line": 1,
+          "text": "[P01] 主体：剪影工作台｜事实：支持字幕｜操作：打开剪辑界面的字幕面板｜画面：同一段画面底部出现一行字幕｜来源：合成字幕录屏 P01"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "required",
+        "term": "支持字幕",
+        "line": 1,
+        "text": "必须说出「支持字幕」。"
+      },
+      {
+        "kind": "banned",
+        "term": "效率提升80%",
+        "line": 2,
+        "text": "禁用词：效率提升80%、一键爆款"
+      },
+      {
+        "kind": "banned",
+        "term": "一键爆款",
+        "line": 2,
+        "text": "禁用词：效率提升80%、一键爆款"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": "product_understanding",
+        "audience": "初次剪口播的创作者",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": "功能教学"
+      },
+      "creative": {
+        "format": "demo",
+        "format_policy": "locked",
+        "style": "清楚直接",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": null,
+        "destination": null
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 15,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 15
+        },
+        {
+          "field": "creative.format",
+          "value": "demo"
+        },
+        {
+          "kind": "required",
+          "term": "支持字幕",
+          "line": 1,
+          "text": "必须说出「支持字幕」。"
+        },
+        {
+          "kind": "banned",
+          "term": "效率提升80%",
+          "line": 2,
+          "text": "禁用词：效率提升80%、一键爆款"
+        },
+        {
+          "kind": "banned",
+          "term": "一键爆款",
+          "line": 2,
+          "text": "禁用词：效率提升80%、一键爆款"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "清楚直接"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "字幕功能推广",
+          "origin": "brief_text",
+          "source": {
+            "value": "字幕功能推广",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：字幕功能推广",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "初次剪口播的创作者",
+          "origin": "brief_text",
+          "source": {
+            "value": "初次剪口播的创作者",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：初次剪口播的创作者",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 15,
+          "origin": "brief_text",
+          "source": {
+            "value": 15,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：15秒",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "清楚直接",
+          "origin": "brief_text",
+          "source": {
+            "value": "清楚直接",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：清楚直接",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "demo",
+          "origin": "brief_text",
+          "source": {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：功能演示",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "剪影工作台",
+          "origin": "brief_text",
+          "source": {
+            "value": "剪影工作台",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：剪影工作台",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.primary",
+          "value": "product_understanding",
+          "origin": "brief_text",
+          "source": {
+            "value": "product_understanding",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进商品理解",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "context.campaign",
+          "value": "功能教学",
+          "origin": "brief_text",
+          "source": {
+            "value": "功能教学",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：功能教学",
+            "source_file": "campaign_p01.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  }
+}

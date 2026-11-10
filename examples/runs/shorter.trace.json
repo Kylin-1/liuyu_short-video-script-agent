@@ -1,0 +1,998 @@
+{
+  "model_mode": "mock",
+  "status": "COMPLETED",
+  "llm_decisions": 0,
+  "checks": {
+    "version": 2,
+    "duration": {
+      "passed": true,
+      "target_seconds": 15,
+      "total_seconds": 12,
+      "over_seconds": 0,
+      "scenes": [
+        {
+          "scene_id": "S01",
+          "planned_seconds": 2,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 2
+        },
+        {
+          "scene_id": "S02",
+          "planned_seconds": 8,
+          "minimum_visual_seconds": 4,
+          "spoken_seconds": 2,
+          "reading_seconds": 0,
+          "estimated_seconds": 8
+        },
+        {
+          "scene_id": "S03",
+          "planned_seconds": 2,
+          "minimum_visual_seconds": 2,
+          "spoken_seconds": 1,
+          "reading_seconds": 0,
+          "estimated_seconds": 2
+        }
+      ]
+    },
+    "rules_and_claims": {
+      "passed": true,
+      "issues": []
+    },
+    "grounding": {
+      "passed": true,
+      "issues": [],
+      "records": [
+        {
+          "scene_id": "title",
+          "field": "title",
+          "text": "岩途随行杯｜细节演示",
+          "status": "CONTROLLED",
+          "basis": "catalog_subject_and_format",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "action",
+          "text": "给出使用前的场景，把注意力引到接下来的操作。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S01",
+          "field": "voiceover",
+          "text": "这个功能怎么用？",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S02",
+          "field": "action",
+          "text": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+          "status": "VERIFIED",
+          "basis": "material.visual",
+          "material_ids": [
+            "P01"
+          ],
+          "quotes": [
+            "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁"
+          ]
+        },
+        {
+          "scene_id": "S02",
+          "field": "voiceover",
+          "text": "杯盖带滑动锁扣。",
+          "status": "VERIFIED",
+          "basis": "material.fact",
+          "material_ids": [
+            "P01"
+          ],
+          "quotes": [
+            "杯盖带滑动锁扣"
+          ]
+        },
+        {
+          "scene_id": "S03",
+          "field": "action",
+          "text": "保留结果画面，留出结尾停顿。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        },
+        {
+          "scene_id": "S03",
+          "field": "voiceover",
+          "text": "看结果。",
+          "status": "CONTROLLED",
+          "basis": "runtime_template",
+          "material_ids": [],
+          "quotes": []
+        }
+      ],
+      "policy_version": "grounding-v1",
+      "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+    },
+    "review": {
+      "passed": true,
+      "issues": [],
+      "scope": "Mock 核对素材与兑现镜头",
+      "version": 2
+    },
+    "creative_review": null
+  },
+  "audit": {
+    "run_id": "2b0abba856d34e29ac63698db1c20f05",
+    "elapsed_ms": 2.71,
+    "tool_calls": 5,
+    "max_tool_calls": 10,
+    "model_calls": 0,
+    "steps": 9,
+    "max_steps": 20,
+    "input_sha256": "7337d7edaeb237655d9d01fee95f86984ba6133fe2394ada4deee945929a5461",
+    "materials_sha256": "7eef1d678bb6d19465a1edaf105441cb5d0d45034fa6b2561bd9ad69524360d0",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "1420899e0546ffa8c0500811282fbc43d65092c0d0bc99db2557a6d8f20f6549"
+  },
+  "creative_mode": "legacy",
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "P01",
+          "subject": "岩途随行杯",
+          "aliases": [
+            "岩途通勤杯"
+          ],
+          "tags": [
+            "杯盖",
+            "锁扣",
+            "通勤"
+          ],
+          "fact": "杯盖带滑动锁扣",
+          "visual": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+          "source": "materials.json#P01",
+          "operation": ""
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "FIND_MATERIAL",
+      "reason": "请道具准备可用素材。",
+      "args": {
+        "query": "锁扣"
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [
+        {
+          "tool": "search_material",
+          "params": {
+            "subject": "岩途随行杯",
+            "query": "锁扣"
+          },
+          "result": [
+            {
+              "id": "P01",
+              "subject": "岩途随行杯",
+              "aliases": [
+                "岩途通勤杯"
+              ],
+              "tags": [
+                "杯盖",
+                "锁扣",
+                "通勤"
+              ],
+              "fact": "杯盖带滑动锁扣",
+              "visual": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+              "source": "materials.json#P01",
+              "operation": ""
+            }
+          ]
+        }
+      ],
+      "role": "道具",
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "WRITE",
+      "model_calls": []
+    },
+    {
+      "step": 2,
+      "action": "WRITE",
+      "reason": "按可用依据起草中文文案。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "岩途随行杯｜细节演示",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "setup",
+            "action": "给出使用前的场景，把注意力引到接下来的操作。",
+            "voiceover": "这个功能怎么用？先看一遍完整的操作，再留意画面里的结果。",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "payoff",
+            "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+            "voiceover": "杯盖带滑动锁扣。",
+            "subtitle": "",
+            "material_id": "P01"
+          },
+          {
+            "id": "S03",
+            "purpose": "close",
+            "action": "保留结果画面，留出结尾停顿。",
+            "voiceover": "看清刚才的动作之后，可以暂停回看这一段。",
+            "subtitle": "",
+            "material_id": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 0,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 3,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": false
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 0,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "setup",
+              "action": "给出使用前的场景，把注意力引到接下来的操作。",
+              "voiceover": "这个功能怎么用？先看一遍完整的操作，再留意画面里的结果。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 7,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "payoff",
+              "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+              "voiceover": "杯盖带滑动锁扣。",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 9,
+            "minimum_visual_seconds": 4,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "close",
+              "action": "保留结果画面，留出结尾停顿。",
+              "voiceover": "看清刚才的动作之后，可以暂停回看这一段。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 6,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 4,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 15,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "setup",
+                  "action": "给出使用前的场景，把注意力引到接下来的操作。",
+                  "voiceover": "这个功能怎么用？先看一遍完整的操作，再留意画面里的结果。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 7,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "close",
+                  "action": "保留结果画面，留出结尾停顿。",
+                  "voiceover": "看清刚才的动作之后，可以暂停回看这一段。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              }
+            ]
+          },
+          "result": {
+            "passed": false,
+            "target_seconds": 15,
+            "total_seconds": 22,
+            "over_seconds": 7,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 7,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 7,
+                "reading_seconds": 0,
+                "estimated_seconds": 7
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 9
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 5,
+                "reading_seconds": 0,
+                "estimated_seconds": 6
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "岩途随行杯｜细节演示",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "setup",
+                  "action": "给出使用前的场景，把注意力引到接下来的操作。",
+                  "voiceover": "这个功能怎么用？先看一遍完整的操作，再留意画面里的结果。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 7,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 9,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "close",
+                  "action": "保留结果画面，留出结尾停顿。",
+                  "voiceover": "看清刚才的动作之后，可以暂停回看这一段。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 6,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              }
+            ],
+            "material_ids": [
+              "P01"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买"
+            ],
+            "required_terms": []
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": true,
+          "issues": [],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "岩途随行杯｜细节演示",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "给出使用前的场景，把注意力引到接下来的操作。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "这个功能怎么用？先看一遍完整的操作，再留意画面里的结果。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁"
+              ]
+            },
+            {
+              "scene_id": "S02",
+              "field": "voiceover",
+              "text": "杯盖带滑动锁扣。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "杯盖带滑动锁扣"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "保留结果画面，留出结尾停顿。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S03",
+              "field": "voiceover",
+              "text": "看清刚才的动作之后，可以暂停回看这一段。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "REVISE_COPY",
+      "model_calls": []
+    },
+    {
+      "step": 5,
+      "action": "REVISE_COPY",
+      "reason": "口播或字幕占用时间，压缩指定镜头再重新排镜。",
+      "args": {
+        "scene_ids": [
+          "S01",
+          "S03"
+        ]
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "role": "编剧",
+      "observation": {
+        "title": "岩途随行杯｜细节演示",
+        "beats": [
+          {
+            "id": "S01",
+            "purpose": "setup",
+            "action": "给出使用前的场景，把注意力引到接下来的操作。",
+            "voiceover": "这个功能怎么用？",
+            "subtitle": "",
+            "material_id": ""
+          },
+          {
+            "id": "S02",
+            "purpose": "payoff",
+            "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+            "voiceover": "杯盖带滑动锁扣。",
+            "subtitle": "",
+            "material_id": "P01"
+          },
+          {
+            "id": "S03",
+            "purpose": "close",
+            "action": "保留结果画面，留出结尾停顿。",
+            "voiceover": "看结果。",
+            "subtitle": "",
+            "material_id": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 1,
+      "next_action": "DIRECT",
+      "model_calls": []
+    },
+    {
+      "step": 6,
+      "action": "DIRECT",
+      "reason": "把文案编排成可拍的分镜。",
+      "args": {
+        "compact": true
+      },
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 1,
+      "calls": [],
+      "role": "导演",
+      "observation": {
+        "scenes": [
+          {
+            "beat": {
+              "id": "S01",
+              "purpose": "setup",
+              "action": "给出使用前的场景，把注意力引到接下来的操作。",
+              "voiceover": "这个功能怎么用？",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 2,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          },
+          {
+            "beat": {
+              "id": "S02",
+              "purpose": "payoff",
+              "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+              "voiceover": "杯盖带滑动锁扣。",
+              "subtitle": "",
+              "material_id": "P01"
+            },
+            "planned_seconds": 8,
+            "minimum_visual_seconds": 4,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          },
+          {
+            "beat": {
+              "id": "S03",
+              "purpose": "close",
+              "action": "保留结果画面，留出结尾停顿。",
+              "voiceover": "看结果。",
+              "subtitle": "",
+              "material_id": ""
+            },
+            "planned_seconds": 2,
+            "minimum_visual_seconds": 2,
+            "continuity": "保持同一主体及操作前后的画面对应",
+            "framing": "",
+            "sound": "",
+            "transition": ""
+          }
+        ]
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "CHECK",
+      "model_calls": []
+    },
+    {
+      "step": 7,
+      "action": "CHECK",
+      "reason": "估算当前版本时长并检查品牌约束。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [
+        {
+          "tool": "estimate_duration",
+          "params": {
+            "target_seconds": 15,
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "setup",
+                  "action": "给出使用前的场景，把注意力引到接下来的操作。",
+                  "voiceover": "这个功能怎么用？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "close",
+                  "action": "保留结果画面，留出结尾停顿。",
+                  "voiceover": "看结果。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              }
+            ]
+          },
+          "result": {
+            "passed": true,
+            "target_seconds": 15,
+            "total_seconds": 12,
+            "over_seconds": 0,
+            "scenes": [
+              {
+                "scene_id": "S01",
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 2
+              },
+              {
+                "scene_id": "S02",
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 4,
+                "spoken_seconds": 2,
+                "reading_seconds": 0,
+                "estimated_seconds": 8
+              },
+              {
+                "scene_id": "S03",
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "spoken_seconds": 1,
+                "reading_seconds": 0,
+                "estimated_seconds": 2
+              }
+            ]
+          }
+        },
+        {
+          "tool": "check_brand",
+          "params": {
+            "title": "岩途随行杯｜细节演示",
+            "scenes": [
+              {
+                "beat": {
+                  "id": "S01",
+                  "purpose": "setup",
+                  "action": "给出使用前的场景，把注意力引到接下来的操作。",
+                  "voiceover": "这个功能怎么用？",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S02",
+                  "purpose": "payoff",
+                  "action": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+                  "voiceover": "杯盖带滑动锁扣。",
+                  "subtitle": "",
+                  "material_id": "P01"
+                },
+                "planned_seconds": 8,
+                "minimum_visual_seconds": 4,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              },
+              {
+                "beat": {
+                  "id": "S03",
+                  "purpose": "close",
+                  "action": "保留结果画面，留出结尾停顿。",
+                  "voiceover": "看结果。",
+                  "subtitle": "",
+                  "material_id": ""
+                },
+                "planned_seconds": 2,
+                "minimum_visual_seconds": 2,
+                "continuity": "保持同一主体及操作前后的画面对应",
+                "framing": "",
+                "sound": "",
+                "transition": ""
+              }
+            ],
+            "material_ids": [
+              "P01"
+            ],
+            "banned_terms": [
+              "全网第一",
+              "百分百有效",
+              "零风险购买"
+            ],
+            "required_terms": []
+          },
+          "result": {
+            "passed": true,
+            "issues": []
+          }
+        }
+      ],
+      "role": "质量工具",
+      "observation": {
+        "grounding": {
+          "passed": true,
+          "issues": [],
+          "records": [
+            {
+              "scene_id": "title",
+              "field": "title",
+              "text": "岩途随行杯｜细节演示",
+              "status": "CONTROLLED",
+              "basis": "catalog_subject_and_format",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "action",
+              "text": "给出使用前的场景，把注意力引到接下来的操作。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S01",
+              "field": "voiceover",
+              "text": "这个功能怎么用？",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S02",
+              "field": "action",
+              "text": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+              "status": "VERIFIED",
+              "basis": "material.visual",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁"
+              ]
+            },
+            {
+              "scene_id": "S02",
+              "field": "voiceover",
+              "text": "杯盖带滑动锁扣。",
+              "status": "VERIFIED",
+              "basis": "material.fact",
+              "material_ids": [
+                "P01"
+              ],
+              "quotes": [
+                "杯盖带滑动锁扣"
+              ]
+            },
+            {
+              "scene_id": "S03",
+              "field": "action",
+              "text": "保留结果画面，留出结尾停顿。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            },
+            {
+              "scene_id": "S03",
+              "field": "voiceover",
+              "text": "看结果。",
+              "status": "CONTROLLED",
+              "basis": "runtime_template",
+              "material_ids": [],
+              "quotes": []
+            }
+          ],
+          "policy_version": "grounding-v1",
+          "scope": "离线来源校验：原文及受控表达匹配；未知表述转入复核。"
+        }
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "REVIEW",
+      "model_calls": []
+    },
+    {
+      "step": 8,
+      "action": "REVIEW",
+      "reason": "时长和规则通过，核对事实、画面与镜头承接。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [],
+      "role": "审核",
+      "observation": {
+        "passed": true,
+        "issues": [],
+        "scope": "Mock 核对素材与兑现镜头",
+        "version": 2
+      },
+      "status": "ok",
+      "script_version_after": 2,
+      "next_action": "DELIVER",
+      "model_calls": []
+    },
+    {
+      "step": 9,
+      "action": "DELIVER",
+      "reason": "当前版本的硬性检查与适用的创作诊断均通过。",
+      "args": {},
+      "decision_source": "mock",
+      "model_mode": "mock",
+      "script_version": 2,
+      "calls": [],
+      "status": "terminal",
+      "next_action": "END",
+      "model_calls": []
+    }
+  ]
+}

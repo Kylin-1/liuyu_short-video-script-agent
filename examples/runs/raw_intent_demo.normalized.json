@@ -1,0 +1,572 @@
+{
+  "status": "READY",
+  "intake": {
+    "status": "READY",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "通勤随行杯的杯盖锁扣",
+      "audience": "上班会带水杯的人",
+      "platform": "抖音",
+      "target_seconds": 30,
+      "style": "快节奏、生活化",
+      "format": "demo",
+      "subject": "岩途随行杯",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "goal": "purchase",
+      "campaign": "随行杯上新",
+      "conversion_action": "open_product_card",
+      "conversion_destination": "视频下方商品卡",
+      "format_policy": "locked"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "通勤随行杯的杯盖锁扣",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：通勤随行杯的杯盖锁扣",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "上班会带水杯的人",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：上班会带水杯的人",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：抖音",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "target_seconds": {
+        "selected": {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 1,
+          "text": "时长：30秒",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "快节奏、生活化",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "风格：快节奏、生活化",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：快节奏、生活化",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format": {
+        "selected": {
+          "value": "demo",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "内容形式：功能演示",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：功能演示",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岩途随行杯",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主体：岩途随行杯",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "value": "9:16",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "画幅：竖屏",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "goal": {
+        "selected": {
+          "value": "purchase",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "主目标：促进购买",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进购买",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "campaign": {
+        "selected": {
+          "value": "随行杯上新",
+          "kind": "brief_text",
+          "line": 2,
+          "text": "业务场景：随行杯上新",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：随行杯上新",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_action": {
+        "selected": {
+          "value": "open_product_card",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "转化动作：点商品卡",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：点商品卡",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "conversion_destination": {
+        "selected": {
+          "value": "视频下方商品卡",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "承接入口：视频下方商品卡",
+          "source_file": "raw_intent_demo.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "locked",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {},
+    "questions": [],
+    "notes": [],
+    "materials": [
+      {
+        "id": "D01",
+        "subject": "岩途随行杯",
+        "aliases": [],
+        "tags": [],
+        "fact": "杯盖带滑动锁扣",
+        "visual": "拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见",
+        "source": "合成商品样片 RT-07",
+        "operation": "拇指沿杯盖凹槽推动锁扣，镜头跟住手指"
+      }
+    ],
+    "material_sources": {
+      "D01": [
+        {
+          "line": 1,
+          "text": "[D01] 主体：岩途随行杯｜事实：杯盖带滑动锁扣｜操作：拇指沿杯盖凹槽推动锁扣，镜头跟住手指｜画面：拇指松开，锁扣停在闭锁标记旁，凹槽和标记都清楚可见｜来源：合成商品样片 RT-07"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "绝对防漏",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      },
+      {
+        "kind": "banned",
+        "term": "永久保温",
+        "line": 1,
+        "text": "禁用词：绝对防漏、永久保温"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": "purchase",
+        "audience": "上班会带水杯的人",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": "随行杯上新"
+      },
+      "creative": {
+        "format": "demo",
+        "format_policy": "locked",
+        "style": "快节奏、生活化",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": "open_product_card",
+        "destination": "视频下方商品卡"
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": 30,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "type": "max_seconds",
+          "value": 30
+        },
+        {
+          "field": "creative.format",
+          "value": "demo"
+        },
+        {
+          "kind": "banned",
+          "term": "绝对防漏",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        },
+        {
+          "kind": "banned",
+          "term": "永久保温",
+          "line": 1,
+          "text": "禁用词：绝对防漏、永久保温"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "快节奏、生活化"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "通勤随行杯的杯盖锁扣",
+          "origin": "brief_text",
+          "source": {
+            "value": "通勤随行杯的杯盖锁扣",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：通勤随行杯的杯盖锁扣",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "上班会带水杯的人",
+          "origin": "brief_text",
+          "source": {
+            "value": "上班会带水杯的人",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：上班会带水杯的人",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.max_seconds",
+          "value": 30,
+          "origin": "brief_text",
+          "source": {
+            "value": 30,
+            "kind": "brief_text",
+            "line": 1,
+            "text": "时长：30秒",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "快节奏、生活化",
+          "origin": "brief_text",
+          "source": {
+            "value": "快节奏、生活化",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "风格：快节奏、生活化",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format",
+          "value": "demo",
+          "origin": "brief_text",
+          "source": {
+            "value": "demo",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "内容形式：功能演示",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岩途随行杯",
+          "origin": "brief_text",
+          "source": {
+            "value": "岩途随行杯",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主体：岩途随行杯",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "brief_text",
+          "source": {
+            "value": "9:16",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "画幅：竖屏",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "goal.primary",
+          "value": "purchase",
+          "origin": "brief_text",
+          "source": {
+            "value": "purchase",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "主目标：促进购买",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "context.campaign",
+          "value": "随行杯上新",
+          "origin": "brief_text",
+          "source": {
+            "value": "随行杯上新",
+            "kind": "brief_text",
+            "line": 2,
+            "text": "业务场景：随行杯上新",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.action",
+          "value": "open_product_card",
+          "origin": "brief_text",
+          "source": {
+            "value": "open_product_card",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "转化动作：点商品卡",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "conversion.destination",
+          "value": "视频下方商品卡",
+          "origin": "brief_text",
+          "source": {
+            "value": "视频下方商品卡",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "承接入口：视频下方商品卡",
+            "source_file": "raw_intent_demo.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "locked",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "locked",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {},
+        "invalid": {},
+        "questions": []
+      },
+      "requires_human_review": false
+    }
+  },
+  "model_mode": "mock"
+}

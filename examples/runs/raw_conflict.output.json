@@ -1,0 +1,390 @@
+{
+  "model_mode": "mock",
+  "status": "NEEDS_INPUT",
+  "status_text": "待补充需求",
+  "detail": "请先确认制作简报。",
+  "requested_fields": [],
+  "script": null,
+  "script_version": 0,
+  "revision_count": 0,
+  "intake": {
+    "status": "NEEDS_INPUT",
+    "schema_version": "2.1",
+    "fields": {
+      "topic": "岸边手作市集周末活动预告",
+      "audience": "周末想带孩子做手作的家庭",
+      "platform": "抖音",
+      "style": "轻快",
+      "subject": "岸边手作市集",
+      "search_hint": "",
+      "aspect_ratio": "9:16",
+      "fictional": false,
+      "format_policy": "propose"
+    },
+    "sources": {
+      "topic": {
+        "selected": {
+          "value": "岸边手作市集周末活动预告",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "主题：岸边手作市集周末活动预告",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岸边手作市集周末活动预告",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：岸边手作市集周末活动预告",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "audience": {
+        "selected": {
+          "value": "周末想带孩子做手作的家庭",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "受众：周末想带孩子做手作的家庭",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "周末想带孩子做手作的家庭",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：周末想带孩子做手作的家庭",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "platform": {
+        "selected": {
+          "value": "抖音",
+          "kind": "brief_text",
+          "line": 1,
+          "text": "平台：抖音",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "style": {
+        "selected": {
+          "value": "轻快",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "风格：轻快",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "轻快",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：轻快",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "subject": {
+        "selected": {
+          "value": "岸边手作市集",
+          "kind": "brief_text",
+          "line": 3,
+          "text": "主体：岸边手作市集",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        "candidates": [
+          {
+            "value": "岸边手作市集",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主体：岸边手作市集",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        ]
+      },
+      "search_hint": {
+        "selected": {
+          "kind": "default",
+          "value": ""
+        }
+      },
+      "aspect_ratio": {
+        "selected": {
+          "kind": "default",
+          "value": "9:16"
+        }
+      },
+      "fictional": {
+        "selected": {
+          "kind": "default",
+          "value": false
+        }
+      },
+      "format_policy": {
+        "selected": {
+          "kind": "inferred",
+          "value": "propose",
+          "from": "format"
+        }
+      }
+    },
+    "missing": [],
+    "conflicts": {
+      "target_seconds": [
+        {
+          "value": 30,
+          "kind": "brief_text",
+          "line": 2,
+          "text": "目标时长：30秒",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        },
+        {
+          "value": 45,
+          "kind": "brief_text",
+          "line": 2,
+          "text": "目标时长：45秒",
+          "source_file": "raw_conflict.txt",
+          "section": "brief_text"
+        }
+      ]
+    },
+    "questions": [
+      "目标时长出现不同值（30、45），请确认使用哪一个。"
+    ],
+    "notes": [],
+    "materials": [
+      {
+        "id": "M01",
+        "subject": "岸边手作市集",
+        "aliases": [],
+        "tags": [],
+        "fact": "现场设手作体验台",
+        "visual": "摊主在体验台摆放彩绳",
+        "source": "活动确认单",
+        "operation": ""
+      }
+    ],
+    "material_sources": {
+      "M01": [
+        {
+          "line": 1,
+          "text": "岸边手作市集的《活动确认单》写着「现场设手作体验台」，可用画面是「摊主在体验台摆放彩绳」。"
+        }
+      ]
+    },
+    "rules": [
+      {
+        "kind": "banned",
+        "term": "免费入场",
+        "line": 1,
+        "text": "禁用词：免费入场、无需预约"
+      },
+      {
+        "kind": "banned",
+        "term": "无需预约",
+        "line": 1,
+        "text": "禁用词：免费入场、无需预约"
+      }
+    ],
+    "invalid_fields": {},
+    "brief": {
+      "goal": {
+        "primary": null,
+        "audience": "周末想带孩子做手作的家庭",
+        "desired_response": null
+      },
+      "context": {
+        "campaign": null
+      },
+      "creative": {
+        "format": null,
+        "format_policy": "propose",
+        "style": "轻快",
+        "requirements_policy": "locked",
+        "user_requirements": {}
+      },
+      "conversion": {
+        "action": null,
+        "destination": null
+      },
+      "delivery": {
+        "platform": "抖音",
+        "max_seconds": null,
+        "aspect_ratio": "9:16"
+      },
+      "hard_constraints": [
+        {
+          "kind": "banned",
+          "term": "免费入场",
+          "line": 1,
+          "text": "禁用词：免费入场、无需预约"
+        },
+        {
+          "kind": "banned",
+          "term": "无需预约",
+          "line": 1,
+          "text": "禁用词：免费入场、无需预约"
+        }
+      ],
+      "soft_preferences": [
+        {
+          "field": "style",
+          "value": "轻快"
+        }
+      ],
+      "field_evidence": [
+        {
+          "field_path": "topic",
+          "value": "岸边手作市集周末活动预告",
+          "origin": "brief_text",
+          "source": {
+            "value": "岸边手作市集周末活动预告",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "主题：岸边手作市集周末活动预告",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "goal.audience",
+          "value": "周末想带孩子做手作的家庭",
+          "origin": "brief_text",
+          "source": {
+            "value": "周末想带孩子做手作的家庭",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "受众：周末想带孩子做手作的家庭",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "delivery.platform",
+          "value": "抖音",
+          "origin": "brief_text",
+          "source": {
+            "value": "抖音",
+            "kind": "brief_text",
+            "line": 1,
+            "text": "平台：抖音",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "creative.style",
+          "value": "轻快",
+          "origin": "brief_text",
+          "source": {
+            "value": "轻快",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "风格：轻快",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "subject",
+          "value": "岸边手作市集",
+          "origin": "brief_text",
+          "source": {
+            "value": "岸边手作市集",
+            "kind": "brief_text",
+            "line": 3,
+            "text": "主体：岸边手作市集",
+            "source_file": "raw_conflict.txt",
+            "section": "brief_text"
+          }
+        },
+        {
+          "field_path": "search_hint",
+          "value": "",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": ""
+          }
+        },
+        {
+          "field_path": "delivery.aspect_ratio",
+          "value": "9:16",
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": "9:16"
+          }
+        },
+        {
+          "field_path": "fictional",
+          "value": false,
+          "origin": "default",
+          "source": {
+            "kind": "default",
+            "value": false
+          }
+        },
+        {
+          "field_path": "creative.format_policy",
+          "value": "propose",
+          "origin": "inferred",
+          "source": {
+            "kind": "inferred",
+            "value": "propose",
+            "from": "format"
+          }
+        }
+      ],
+      "issues": {
+        "missing": [],
+        "conflicts": {
+          "target_seconds": [
+            {
+              "value": 30,
+              "kind": "brief_text",
+              "line": 2,
+              "text": "目标时长：30秒",
+              "source_file": "raw_conflict.txt",
+              "section": "brief_text"
+            },
+            {
+              "value": 45,
+              "kind": "brief_text",
+              "line": 2,
+              "text": "目标时长：45秒",
+              "source_file": "raw_conflict.txt",
+              "section": "brief_text"
+            }
+          ]
+        },
+        "invalid": {},
+        "questions": [
+          "目标时长出现不同值（30、45），请确认使用哪一个。"
+        ]
+      },
+      "requires_human_review": true
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "model_mode": "mock",
+  "status": "TOOL_LIMIT",
+  "status_text": "达到工具调用上限",
+  "detail": "工具调用预算耗尽，当前任务未完成。",
+  "requested_fields": [],
+  "script": null,
+  "script_version": 1,
+  "revision_count": 0,
+  "checks": {
+    "version": 1,
+    "duration": null,
+    "rules_and_claims": null,
+    "grounding": null,
+    "review": null,
+    "creative_review": null
+  },
+  "creative_mode": "legacy",
+  "creative_model_mode": "mock",
+  "creative": {
+    "plans": [],
+    "selected_plan_id": null,
+    "selection_reason": "",
+    "revision_count": 0,
+    "evidence_pack": {
+      "facts": [
+        {
+          "id": "P01",
+          "subject": "岩途随行杯",
+          "aliases": [
+            "岩途通勤杯"
+          ],
+          "tags": [
+            "杯盖",
+            "锁扣",
+            "通勤"
+          ],
+          "fact": "杯盖带滑动锁扣",
+          "visual": "特写拇指推动杯盖锁扣，锁扣停在闭锁标记旁",
+          "source": "materials.json#P01",
+          "operation": ""
+        }
+      ],
+      "boundaries": [
+        "仅允许引用这些事实原文，不从画面或剧情推导性能。",
+        "缺少效果数据时，不得添加效率、销量或转化提升结论。",
+        "虚构人物和对白不构成产品测试证据。"
+      ]
+    }
+  },
+  "audit": {
+    "run_id": "91b260b87cb849e5bf442494a151340d",
+    "elapsed_ms": 0.48,
+    "tool_calls": 2,
+    "max_tool_calls": 2,
+    "model_calls": 0,
+    "steps": 4,
+    "max_steps": 20,
+    "input_sha256": "b7ca7385524f0dd1fab474d719fe9dd5c20de838bb0278cbec48c1e86b7af446",
+    "materials_sha256": "7eef1d678bb6d19465a1edaf105441cb5d0d45034fa6b2561bd9ad69524360d0",
+    "grounding_policy": "grounding-v1",
+    "rules_sha256": "1420899e0546ffa8c0500811282fbc43d65092c0d0bc99db2557a6d8f20f6549"
+  },
+  "decision_model": {
+    "name": "offline",
+    "transport": "offline"
+  },
+  "llm_decisions": 0
+}
